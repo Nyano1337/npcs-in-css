@@ -5,85 +5,85 @@
 		"Offsets"
 		{
 			/* Game Rules */
-			"g_pGameRules"
+			"g_pGameRules" // done
 			{
 				"windows"	"5"
 			}
-			"GameRules_Damage_NoPhysicsForce"
+			"GameRules_Damage_NoPhysicsForce" // done
 			{
 				"windows"	"20"
 				"linux"	 "21"
 			}
-			"GameRules_GetNextBestWeapon"
+			"GameRules_GetNextBestWeapon" // done
 			{
 				"windows"	"28"
 				"linux"	 "29"
 			}
-			"GameRules_ShouldCollide"
+			"GameRules_ShouldCollide" // done
 			{
 				"windows"	"29"
 				"linux"	 "30"
 			}
-			"GameRules_GetViewVectors"
+			"GameRules_GetViewVectors" // done
 			{
 				"windows"	"31"
 				"linux"	 "32"
 			}
-			"GameRules_IsSkillLevel"
+			"GameRules_IsSkillLevel" // done
 			{
-				"windows"	"49"
+				"windows"	"50" // "49"
 				"linux"	 "50"
 			}
-			"GameRules_IsTeamplay"
+			"GameRules_IsTeamplay" // done
 			{
-				"windows"	"56"
+				"windows"	"57" // "56"
 				"linux"	 "57"
 			}
-			"GameRules_FlPlayerFallDamageHook"
+			"GameRules_FlPlayerFallDamageHook" // done
 			{
-				"windows"	"62"
+				"windows"	"63" // "62"
 				"linux"	"63"
 			}
-			"GameRules_FPlayerCanTakeDamage"
+			"GameRules_FPlayerCanTakeDamage" // done
 			{
-				"windows"	"63"
+				"windows"	"64" // "63"
 				"linux"	 "64"
 			}
-			"GameRules_RadiusDamage"
+			"GameRules_RadiusDamage" // done
 			{
-				"windows"	"68"
+				"windows"	"69" // "68"
 				"linux"	 "69"
 			}
-			"GameRules_IsSpawnPointValid"
+			"GameRules_IsSpawnPointValid" // done
 			{
-				"windows"	"76"
+				"windows"	"77" // "76"
 				"linux"	 "77"
 			}
-			"GameRules_DeathNotice"
+			"GameRules_DeathNotice" // done
 			{
-				"windows"	"82"
+				"windows"	"83" // "82"
 				"linux"	 "83"
 			}
-			"GameRules_FAllowNPCs"
+			"GameRules_FAllowNPCs" // done
 			{
-				"windows"	"119"
+				"windows"	"120" // "119"
 				"linux"	 "120"
 			}
-			"GameRules_EndMultiplayerGame"
+			"GameRules_EndMultiplayerGame" // done
 			{
-				"windows"	"120"
+				"windows"	"121" // "120"
 				"linux"	 "121"
 			}
 			
 			
 			
 			/* CGameMovement */
-			"CGameMovement_OnLadder"
+			"CGameMovement_OnLadder" // done
 			{
 				"windows"	"34"
 				"linux"	 "35"
 			}
-			"CGameMovement_CheckFalling"
+			"CGameMovement_CheckFalling" // done
 			{
 				"windows"	"44"
 				"linux"	 "45"
@@ -92,2664 +92,2664 @@
 			
 			
 			/* CSceneEntity */
-			"StartPlayback"
+			"StartPlayback" // done
 			{
-				"windows"	"196"
-				"linux"	"201"
+				"windows"	"202" // "196"
+				"linux"	"207" // "201"
 			}
-			"CancelPlayback"
+			"CancelPlayback" // done
 			{
-				"windows"	"199"
-				"linux"	"204"
+				"windows"	"205" // "199"
+				"linux"	"210" // "204"
 			}
-			"EstimateLength"
+			"EstimateLength" // done
 			{
-				"windows"	"228"
-				"linux"	"233"
+				"windows"	"234" // "228"
+				"linux"	"239" // "233"
 			}
-			"FindNamedActor_I"
+			"FindNamedActor_I" // done
 			{
-				"windows"	"231"
-				"linux"	"235"
+				"windows"	"238" // "231"
+				"linux"	"241" // "235"
 			}
 			
 			/* CBaseGrenade */
-			"Explode"
+			"Explode" // done
 			{
-				"windows"	"224"
-				"linux"	"225"
+				"windows"	"231" // "224"
+				"linux"	"232" // "225"
 			}
-			"Detonate"
+			"Detonate" // done
 			{
-				"windows"	"225"
-				"linux"	"226"
+				"windows"	"232" // "225"
+				"linux"	"233" // "226"
 			}
-			"GetBlastForce"
+			"GetBlastForce" // done
 			{
-				"windows" "226"
-				"linux" "227"
+				"windows" "233" // "226"
+				"linux" "234" // "227"
 			}
-			"GetShakeAmplitude"
+			"GetShakeAmplitude" // done
 			{
-				"windows"	"228"
-				"linux"	"229"
+				"windows"	"235" // "228"
+				"linux"	"236" // "229"
 			}
-			"GetShakeRadius"
+			"GetShakeRadius" // done
 			{
-				"windows"	"229"
-				"linux"	"230"
+				"windows"	"236" // "229"
+				"linux"	"237" // "230"
 			}			
 			
 			/* CBaseEntity */
-			"GetServerClass"
+			"GetServerClass" // done
 			{
 				"windows"	"9"
 				"linux"	"10"
 			}
-			"GetDataDescMap_Real"
+			"GetDataDescMap_Real" // done
 			{
 				"windows"	"11"
 				"linux"	"12"
 			}
-			"TestCollision"
+			"TestCollision" // done ? two functions offsets // same names but Collision and Hitboxes
 			{
-				"windows"	"13"
-				"linux"	"14"
+				"windows"	"14" // "13"
+				"linux"	"15" // "14"
 			}
-			"TestHitboxes"
+			"TestHitboxes" // done
 			{
-				"windows"	"14"
-				"linux"	"15"
+				"windows"	"15" // "14"
+				"linux"	"16" // "15"
 			}
-			"ComputeWorldSpaceSurroundingBox"
+			"ComputeWorldSpaceSurroundingBox" // done
 			{
-				"windows"	"15"
-				"linux"	"16"
+				"windows"	"16" // "15"
+				"linux"	"17" // "16"
 			}
-			"ShouldCollide"
+			"ShouldCollide" // done
 			{
-				"windows"	"16"
-				"linux"	"17"
+				"windows"	"17" // "16"
+				"linux"	"18" // "17"
 			}
-			"SetOwnerEntity"
+			"SetOwnerEntity" // done
 			{
-				"windows"	"17"
-				"linux"	"18"
+				"windows"	"18" // "17"
+				"linux"	"19" // "18"
 			}
-			"ShouldTransmit"
+			"ShouldTransmit" // done
 			{
-				"windows"	"18"
-				"linux"	"19"
+				"windows"	"20" // "18"
+				"linux"	"21" // "19"
 			}
-			"UpdateTransmitState"
+			"UpdateTransmitState" // done
 			{
-				"windows"	"19"
-				"linux"	"20"
+				"windows"	"21" // "19"
+				"linux"	"22" // "20"
 			}
-			"SetTransmit"
+			"SetTransmit" // done
 			{
-				"windows"	"20"
-				"linux"	"21"
+				"windows"	"22" // "20"
+				"linux"	"23" // "21"
 			}
-			"GetTracerType"
+			"GetTracerType" // done -> CBaseEntity::GetBeamTraceFilter()
 			{
-				"windows"	"21"
-				"linux"	"22"
+				"windows"	"23" // "21"
+				"linux"	"24" // "22"
 			}
-			"Spawn"
+			"Spawn" // done
 			{
-				"windows"	"22"
-				"linux"	"23"
+				"windows"	"24" // "22"
+				"linux"	"25" // "23"
 			}
-			"Precache"
+			"Precache" // done
 			{
-				"windows"	"23"
-				"linux"	"24"
+				"windows"	"25" // "23"
+				"linux"	"26" // "24"
 			}
-			"SetModel"
+			"SetModel" // done
 			{
-				"windows"	"24"
-				"linux"	"25"
+				"windows"	"26" // "24"
+				"linux"	"27" // "25"
 			}
-			"DispatchKeyValue"
+			"DispatchKeyValue" // done
 			{
-				"windows"	"31"
-				"linux"	"30"
+				"windows"	"33" // "31"
+				"linux"	"32" // "30"
 			}
-			"DispatchKeyValueVector"
+			"DispatchKeyValueVector" // done
 			{
-				"windows"	"29"
-				"linux"	"32"
+				"windows"	"31" // "29"
+				"linux"	"34" // "32"
 			}
-			"DispatchKeyValueFloat"
+			"DispatchKeyValueFloat" // done
 			{
-				"windows"	"30"
-				"linux"	"31"
+				"windows"	"32" // "30"
+				"linux"	"33"// "31"
 			}
-			"Activate"
+			"Activate" // done
 			{
-				"windows"	"33"
-				"linux"	"34"
+				"windows"	"35" // "33"
+				"linux"	"36" // "34"
 			}
-			"SetParent"
+			"SetParent" // done
 			{
-				"windows"	"34"
-				"linux"	"35"
+				"windows"	"35" // "34"
+				"linux"	"36" // "35"
 			}
-			"ObjectCaps"
+			"ObjectCaps" // done
 			{
-				"windows"	"35"
-				"linux"	"36"
+				"windows"	"37" // "35"
+				"linux"	"38" // "36"
 			}
-			"AcceptInput"
+			"AcceptInput" // done
 			{
-				"windows"	"36"
-				"linux"	"37"
+				"windows"	"38" // "36"
+				"linux"	"39" // "37"
 			}
-			"Save"
+			"Save" // done
 			{
-				"windows"	"40"
-				"linux"	"41"
+				"windows"	"42" // "40"
+				"linux"	"43" // "41"
 			}
-			"Restore"
+			"Restore" // done
 			{
-				"windows"	"41"
-				"linux"	"42"
+				"windows"	"43" // "41"
+				"linux"	"44" // "42"
 			}
-			"ShouldSavePhysics"
+			"ShouldSavePhysics" // done
 			{
-				"windows"	"42"
-				"linux"	"43"
+				"windows"	"44" // "42"
+				"linux"	"45" // "43"
 			}
-			"OnSave"
+			"OnSave" // done
 			{
-				"windows"	"43"
-				"linux"	"44"
+				"windows"	"45" // "43"
+				"linux"	"46" // "44"
 			}
-			"OnRestore"
+			"OnRestore" // done
 			{
-				"windows"	"44"
-				"linux"	"45"
+				"windows"	"46" // "44"
+				"linux"	"47" // "45"
 			}
-			"Think"
+			"Think" // done
 			{
-				"windows"	"47"
-				"linux"	"48"
+				"windows"	"49" // "47"
+				"linux"	"50" // "48"
 			}
-			"GetResponseSystem"
+			"GetResponseSystem" // done
 			{
-				"windows"	"51"
-				"linux"	"52"
+				"windows"	"53" // "51"
+				"linux"	"54" // "52"
 			}
-			"DispatchResponse"
+			"DispatchResponse" // done
 			{
-				"windows"	"52"
-				"linux"	"53"
+				"windows"	"54" // "52"
+				"linux"	"55" // "53"
 			}
-			"Classify"
+			"Classify" // done
 			{
-				"windows"	"53"
-				"linux"	"54"
+				"windows"	"55" // "53"
+				"linux"	"56" // "54"
 			}
-			"DeathNotice"
+			"DeathNotice" // done
 			{
-				"windows"	"54"
-				"linux"	"55"
+				"windows"	"56" // "54"
+				"linux"	"57" // "55"
 			}
-			"ShouldAttractAutoAim"
+			"ShouldAttractAutoAim" // done
 			{
-				"windows"	"55"
-				"linux"	"56"
+				"windows"	"57" // "55"
+				"linux"	"58"// "56"
 			}
-			"GetAutoAimRadius"
+			"GetAutoAimRadius" // done
 			{
-				"windows"	"56"
-				"linux"	"57"
+				"windows"	"58" // "56"
+				"linux"	"59" // "57"
 			}
-			"GetAutoAimCenter"
+			"GetAutoAimCenter" // done
 			{
-				"windows"	"57"
-				"linux"	"58"
+				"windows"	"59" // "57"
+				"linux"	"60" // "58"
 			}
-			"PassesDamageFilter"
+			"PassesDamageFilter" // done
 			{
-				"windows"	"59"
-				"linux"	"60"
+				"windows"	"61" // "59"
+				"linux"	"62" // "60"
 			}
-			"TraceAttack"
+			"TraceAttack" // done
 			{
-				"windows"	"60"
-				"linux"	"61"
+				"windows"	"62"// "60"
+				"linux"	"63" // "61"
 			}
-			"OnTakeDamage"
+			"OnTakeDamage" // done
 			{
-				"windows"	"62"
-				"linux"		"63"
+				"windows"	"64" // "62"
+				"linux"		"65" // "63"
 			}
-			"TakeHealth"
+			"TakeHealth" // done
 			{
-				"windows"	"64"
-				"linux"	"65"
+				"windows"	"66" // "64"
+				"linux"	"67" // "65"
 			}
-			"IsAlive"
+			"IsAlive" // done
 			{
-				"windows"	"65"
-				"linux"	"66"
+				"windows"	"67" // "65"
+				"linux"	"68" // "66"
 			}
-			"Event_Killed"
+			"Event_Killed" // done
 			{
-				"windows"	"66"
-				"linux"	"67"
+				"windows"	"68" // "66"
+				"linux"	"69" // "67"
 			}
-			"Event_KilledOther"
+			"Event_KilledOther" // done
 			{
-				"windows"	"67"
-				"linux"	"68"
+				"windows"	"69" // "67"
+				"linux"	"70" // "68"
 			}
-			"BloodColor"
+			"BloodColor" // done
 			{
-				"windows"	"68"
-				"linux"	"69"
+				"windows"	"70" // "68"
+				"linux"	"71" // "69"
 			}
-			"IsTriggered"
+			"IsTriggered" // done
 			{
-				"windows"	"69"
-				"linux"	"70"
+				"windows"	"71" // "69"
+				"linux"	"72" // "70"
 			}
-			"IsNPC"
+			"IsNPC" // done
 			{
-				"windows"	"70"
-				"linux"	"71"
+				"windows"	"72" // "70"
+				"linux"	"73" // "71"
 			}
-			"IsMoving"
+			"IsMoving" // done
 			{
-				"windows"	"74"
-				"linux"	"75"
+				"windows"	"76" // "74"
+				"linux"	"77" // "75"
 			}
-			"DecalTrace"
+			"DecalTrace" // done
 			{
-				"windows"	"76"
-				"linux"	"77"
+				"windows"	"78" // "76"
+				"linux"	"79" // "77"
 			}
-			"ImpactTrace"
+			"ImpactTrace" // done
 			{
-				"windows"	"77"
-				"linux"	"78"
+				"windows"	"79" // "77"
+				"linux"	"80" // "78"
 			}
-			"OnControls"
+			"OnControls" // done
 			{
-				"windows"	"78"
-				"linux"	"79"
+				"windows"	"80" // "78"
+				"linux"	"81"// "79"
 			}
-			"IsNetClient"
+			"IsNetClient" // done
 			{
-				"windows"	"81"
-				"linux"	"82"
+				"windows"	"83" // "81"
+				"linux"	"84" // "82"
 			}
-			"GetServerVehicle"
+			"GetServerVehicle" // done
 			{
-				"windows"	"89"
-				"linux"	"90"
+				"windows"	"91" // "89"
+				"linux"	"92" // "90"
 			}
-			"IsViewable"
+			"IsViewable" // done
 			{
-				"windows"	"90"
-				"linux"	"91"
+				"windows"	"92" // "90"
+				"linux"	"93" // "91"
 			}
-			"OnEntityEvent"
+			"OnEntityEvent" // donoe
 			{
-				"windows"	"92"
-				"linux"	"93"
+				"windows"	"94" // "92"
+				"linux"	"95" // "93"
 			}
-			"CanStandOn" //CBaseEntity
+			"CanStandOn" //CBaseEntity // done
 			{
-				"windows"	"94"
-				"linux"	"94"
+				"windows"	"96" // "94"
+				"linux"	"96" // "94"
 			}
-			"CB_GetEnemy_const"
+			"CB_GetEnemy_const" // done
 			{
-				"windows"	"95"
-				"linux"	"97"
+				"windows"	"97" // "95"
+				"linux"	"99" // "97"
 			}
-			"CB_GetEnemy"
+			"CB_GetEnemy" // done
 			{
-				"windows"	"96"
-				"linux"	"96"
+				"windows"	"98" // "96"
+				"linux"	"98" // "96"
 			}
-			"Use"
+			"Use" // done
 			{
-				"windows"	"97"
-				"linux"	"98"
+				"windows"	"99" // "97"
+				"linux"	"100" // "98"
 			}
-			"StartTouch"
+			"StartTouch" // done
 			{
-				"windows"	"98"
-				"linux"	"99"
+				"windows"	"100" // "98"
+				"linux"	"101" // "99"
 			}
-			"Touch"
+			"Touch" // done
 			{
-				"windows"	"99"
-				"linux"	"100"
+				"windows"	"101" // "99"
+				"linux"	"102" // "100"
 			}
-			"EndTouch"
+			"EndTouch" // done
 			{
-				"windows"	"100"
-				"linux"	"101"
+				"windows"	"102" // "100"
+				"linux"	"103" // "101"
 			}
-			"PhysicsSimulate"
+			"PhysicsSimulate" // done
 			{
-				"windows"	"104"
-				"linux"	"105"
+				"windows"	"106" // "104"
+				"linux"	"107" // "105"
 			}
-			"UpdateOnRemove"
+			"UpdateOnRemove" // done
 			{
-				"windows"	"105"
-				"linux"	"106"
+				"windows"	"107" // "105"
+				"linux"	"108" // "106"
 			}
-			"StopLoopingSounds"
+			"StopLoopingSounds" // done
 			{
-				"windows"	"106"
-				"linux"	"107"
+				"windows"	"108" // "106"
+				"linux"	"109" // "107"
 			}
-			"SUB_AllowedToFade"
+			"SUB_AllowedToFade" // done
 			{
-				"windows"	"107"
-				"linux"	"108"
+				"windows"	"109" // "107"
+				"linux"	"110" // "108"
 			}
-			"Teleport"
+			"Teleport" // done
 			{
-				"windows"	"108"
-				"linux"	"109"
+				"windows"	"110" // "108"
+				"linux"	"111" // "109"
 			}
-			"MakeTracer"
+			"MakeTracer" // done
 			{
-				"windows"	"110"
-				"linux"	"111"
+				"windows"	"112" // "110"
+				"linux"	"113" // "111"
 			}
-			"FireBullets"
+			"FireBullets" // done
 			{
-				"windows"	"112"
-				"linux"	"113"
+				"windows"	"114" // "112"
+				"linux"	"115" // "113"
 			}
-			"DoImpactEffect"
+			"DoImpactEffect" // done
 			{
-				"windows"	"113"
-				"linux"	"114"
+				"windows"	"115" // "113"
+				"linux"	"116" // "114"
 			}
-			"ModifyOrAppendCriteria"
+			"ModifyOrAppendCriteria" // done
 			{
-				"windows"	"118"
-				"linux"	"119"
+				"windows"	"120" // "118"
+				"linux"	"121" // "119"
 			}
-			"GetDamage"
+			"GetDamage" // done
 			{
-				"windows"	"128"
-				"linux"	"129"
+				"windows"	"131" // "128"
+				"linux"	"132" // "129"
 			}
-			"SetDamage"
+			"SetDamage" // done
 			{
-				"windows"	"129"
-				"linux"	"130"
+				"windows"	"132" // "129"
+				"linux"	"133" // "130"
 			}
-			"EyePosition"
+			"EyePosition" // done
 			{
-				"windows"	"130"
-				"linux"	"131"
+				"windows"	"133" // "130"
+				"linux"	"134" // "131"
 			}
-			"EyeAngles"
+			"EyeAngles" // done
 			{
-				"windows"	"131"
-				"linux"	"132"
+				"windows"	"134" // "131"
+				"linux"	"135" // "132"
 			}
-			"EarPosition"
+			"EarPosition" // done
 			{
-				"windows"	"133"
-				"linux"	"134"
+				"windows"	"136" // "133"
+				"linux"	"137" // "134"
 			}
-			"BodyTarget"
+			"BodyTarget" // done
 			{
-				"windows"	"134"
-				"linux"	"135"
+				"windows"	"137" // "134"
+				"linux"	"138" // "135"
 			}
-			"HeadTarget"
+			"HeadTarget" // done
 			{
-				"windows"	"135"
-				"linux"	"136"
+				"windows"	"138" // "135"
+				"linux"	"139" // "136"
 			}
-			"GetViewOffset"
+			"GetViewOffset" // done
 			{
-				"windows"	"137"
-				"linux"	"138"
+				"windows"	"140" // "137"
+				"linux"	"141" // "138"
 			}
-			"GetSmoothedVelocity"
+			"GetSmoothedVelocity" // done
 			{
-				"windows"	"139"
-				"linux"	"140"
+				"windows"	"142" // "139"
+				"linux"	"143" // "140"
 			}
-			"GetVelocity"
+			"GetVelocity" // done
 			{
-				"windows"	"140"
-				"linux"	"141"
+				"windows"	"143" // "140"
+				"linux"	"144" // "141"
 			}
-			"FVisible_Vector"
+			"FVisible_Vector" // done
 			{
-				"windows"	"141"
-				"linux"	"143"
+				"windows"	"144" // "141"
+				"linux"	"146" // "143"
 			}
-			"FVisible_Entity"
+			"FVisible_Entity" // done
 			{
-				"windows"	"142"
-				"linux"	"142"
+				"windows"	"145" // "142"
+				"linux"	"145" // "142"
 			}
-			"CanBeSeenBy"
+			"CanBeSeenBy" // done
 			{
-				"windows"	"143"
-				"linux"	"144"
+				"windows"	"146" // "143"
+				"linux"	"147" // "144"
 			}
-			"GetAttackDamageScale"
+			"GetAttackDamageScale" // done
 			{
-				"windows"	"144"
-				"linux"	"145"
+				"windows"	"147" // "144"
+				"linux"	"148" // "145"
 			}
-			"Splash"
+			"Splash" // done
 			{
-				"windows"	"148"
-				"linux"	"149"
+				"windows"	"151" // "148"
+				"linux"	"152" // "149"
 			}
-			"WorldSpaceCenter"
+			"WorldSpaceCenter" // done
 			{
-				"windows"	"149"
-				"linux"	"150"
+				"windows"	"152" // "149"
+				"linux"	"153" // "150"
 			}
-			"GetSoundEmissionOrigin"
+			"GetSoundEmissionOrigin" // done
 			{
-				"windows"	"150"
-				"linux"	"151"
+				"windows"	"153" // "150"
+				"linux"	"154" // "151"
 			}
-			"CreateVPhysics"
+			"CreateVPhysics" // done
 			{
-				"windows"	"154"
-				"linux"	"155"
+				"windows"	"157" // "154"
+				"linux"	"158" // "155"
 			}
-			"VPhysicsDestroyObject"
+			"VPhysicsDestroyObject" // done
 			{
-				"windows"	"156"
-				"linux"	"157"
+				"windows"	"159" // "156"
+				"linux"	"160" // "157"
 			}
-			"VPhysicsUpdate"
+			"VPhysicsUpdate" // done
 			{
-				"windows"	"157"
-				"linux"	"158"
+				"windows"	"160" // "157"
+				"linux"	"161" // "158"
 			}
-			"VPhysicsTakeDamage"
+			"VPhysicsTakeDamage" // done
 			{
-				"windows"	"158"
-				"linux"	"159"
+				"windows"	"161" // "158"
+				"linux"	"162" // "159"
 			}
-			"VPhysicsShadowCollision"
+			"VPhysicsShadowCollision" // done
 			{
-				"windows"	"159"
-				"linux"	"160"
+				"windows"	"162" // "159"
+				"linux"	"163" // "160"
 			}
-			"VPhysicsShadowUpdate"
+			"VPhysicsShadowUpdate" // done
 			{
-				"windows"	"160"
-				"linux"	"161"
+				"windows"	"163" // "160"
+				"linux"	"164" // "161"
 			}
-			"VPhysicsCollision"
+			"VPhysicsCollision" // done
 			{
-				"windows"	"161"
-				"linux"	"162"
+				"windows"	"164" // "161"
+				"linux"	"165" // "162"
 			}
-			"UpdatePhysicsShadowToCurrentPosition"
+			"UpdatePhysicsShadowToCurrentPosition" // done
 			{
-				"windows"	"163"
-				"linux"	"164"
+				"windows"	"166" // "163"
+				"linux"	"167" // "164"
 			}
-			"VPhysicsGetObjectList"
+			"VPhysicsGetObjectList" // done
 			{
-				"windows"	"164"
-				"linux"	"165"
+				"windows"	"167" // "164"
+				"linux"	"168" // "165"
 			}
-			"VPhysicsIsFlesh"
+			"VPhysicsIsFlesh" // done
 			{
-				"windows"	"165"
-				"linux"	"166"
+				"windows"	"168" // "165"
+				"linux"	"169" // "166"
 			}
-			"HasPhysicsAttacker"
+			"HasPhysicsAttacker" // done
 			{
-				"windows"	"166"
-				"linux"	"167"
+				"windows"	"169" // "166"
+				"linux"	"170" // "167"
 			}
-			"PhysicsSolidMaskForEntity"
+			"PhysicsSolidMaskForEntity" // done
 			{
-				"windows"	"167"
-				"linux"	"168"
+				"windows"	"170" // "167"
+				"linux"	"171" // "168"
 			}
-			"ResolveFlyCollisionCustom"
+			"ResolveFlyCollisionCustom" // done
 			{
-				"windows"	"168"
-				"linux"	"169"
+				"windows"	"171" // "168"
+				"linux"	"172" // "169"
 			}
 			/* End CBaseEntity */ 
 			
 			
 			/* CBaseTrigger */
-			"PassesTriggerFilters"
+			"PassesTriggerFilters" // done
 			{
-				"windows"	"197"
-				"linux"	"198"
+				"windows"	"203" // "197"
+				"linux"	"204" // "198"
 			}
 			/* End CBaseTrigger */
 			
 			/* CBaseAnimating */
-			"GetIdealSpeed"
+			"GetIdealSpeed" // done
 			{
-				"windows"	"188"
-				"linux"	"189"
+				"windows"	"194" // "188"
+				"linux"	"195" // "189"
 			}
-			"GetIdealAccel"
+			"GetIdealAccel" // done
 			{
-				"windows"	"189"
-				"linux"	"190"
+				"windows"	"195" // "189"
+				"linux"	"196" // "190"
 			}
-			"StudioFrameAdvance"
+			"StudioFrameAdvance" // done
 			{
-				"windows"	"190"
-				"linux"	"191"
+				"windows"	"196" // "190"
+				"linux"	"197" // "191"
 			}
-			"IsActivityFinished"
+			"IsActivityFinished" // done
 			{
-				"windows"	"192"
-				"linux"	"193"
+				"windows"	"198" // "192"
+				"linux"	"199" // "193"
 			}
-			"GetSequenceGroundSpeed"
+			"GetSequenceGroundSpeed" // done
 			{
-				"windows"	"193"
-				"linux"	"194"
+				"windows"	"199" // "193"
+				"linux"	"200" // "194"
 			}
-			"ClampRagdollForce"
+			"ClampRagdollForce" // done
 			{
-				"windows"	"194"
-				"linux"	"195"
+				"windows"	"200" // "194"
+				"linux"	"201" // "195"
 			}
-			"BecomeRagdollOnClient"
+			"BecomeRagdollOnClient" // done
 			{
-				"windows"	"195"
-				"linux"	"196"
+				"windows"	"201" // "195"
+				"linux"	"202" // "196"
 			}
-			"CanBecomeRagdoll"
+			"CanBecomeRagdoll" // done
 			{
-				"windows"	"197"
-				"linux"	"198"
+				"windows"	"203" // "197"
+				"linux"	"204" // "198"
 			}
-			"SetupBones"
+			"SetupBones" // done
 			{
-				"windows"	"200"
-				"linux"	"201"
+				"windows"	"206" // "200"
+				"linux"	"207" // "201"
 			}
-			"CalculateIKLocks"
+			"CalculateIKLocks" // done
 			{
-				"windows"	"201"
-				"linux"	"202"
+				"windows"	"207" // "201"
+				"linux"	"208" // "202"
 			}
-			"DispatchAnimEvents"
+			"DispatchAnimEvents" // done
 			{
-				"windows"	"202"
-				"linux"	"203"
+				"windows"	"208" // "202"
+				"linux"	"209" // "203"
 			}
-			"HandleAnimEvent"
+			"HandleAnimEvent" // done
 			{
-				"windows"	"203"
-				"linux"	"204"
+				"windows"	"209" // "203"
+				"linux"	"210" // "204"
 			}
-			"PopulatePoseParameters"
+			"PopulatePoseParameters" // done
 			{
-				"windows"	"204"
-				"linux"	"205"
+				"windows"	"210" // "204"
+				"linux"	"211" // "205"
 			}
-			"GetAttachment"
+			"GetAttachment" // done
 			{
-				"windows"	"205"
-				"linux"	"206"
+				"windows"	"211" // "205"
+				"linux"	"212" // "206"
 			}
-			"InitBoneControllers"
+			"InitBoneControllers" // done
 			{
-				"windows"	"206"
-				"linux"	"207"
+				"windows"	"212" // "206"
+				"linux"	"213" // "207"
 			}
-			"GetGroundSpeedVelocity"
+			"GetGroundSpeedVelocity" // done
 			{
-				"windows"	"207"
-				"linux"	"208"
+				"windows"	"213" // "207"
+				"linux"	"214" // "208"
 			}
-			"Ignite" //Ignite(float, bool, float, bool)
+			"Ignite" //Ignite(float, bool, float, bool) // done
 			{
-				"windows"	"209"
-				"linux"	"210"
+				"windows"	"215" // "209"
+				"linux"	"216" // "210"
 			}
-			"Extinguish"
+			"Extinguish" // done
 			{
-				"windows"	"213"
-				"linux"	"214"
+				"windows"	"219" // "213"
+				"linux"	"220" // "214"
 			}
-			"m_nHitboxSet"
+			"m_nHitboxSet" // !!! done
 			{
-				"windows"   "860"
-				"linux" "880"
+				// "windows"   "860"
+				"linux" "940" // "880"
 			}
 			/* End CBaseAnimating */
 			
 			
 			
 			/* CBaseCombatCharacter */
-			"GetPhysicsImpactDamageTable"
+			"GetPhysicsImpactDamageTable" // done
 			{
-				"windows"	"225"
-				"linux"	"226"
+				"windows"	"231" // "225"
+				"linux"	"232" // "226"
 			}
 			"FInViewCone_Vector"
 			{
-				"windows"	"226"
-				"linux"	"228"
+				"windows"	"232" // "226"
+				"linux"	"234" // "228"
 			}
-			"FInViewCone_Entity"
+			"FInViewCone_Entity" // done
 			{
-				"windows"	"227"
-				"linux"	"227"
+				"windows"	"233" // "227"
+				"linux"	"233" // "227"
 			}
-			"FInAimCone_Vector"
+			"FInAimCone_Vector" // done
 			{
-				"windows"	"228"
-				"linux"	"230"
+				"windows"	"234" // "228"
+				"linux"	"236" // "230"
 			}
-			"FInAimCone_Entity"
+			"FInAimCone_Entity" // done
 			{
-				"windows"	"229"
-				"linux"	"229"
+				"windows"	"235" // "229"
+				"linux"	"235" // "229"
 			}
-			"ShouldShootMissTarget"
+			"ShouldShootMissTarget" // done
 			{
-				"windows"	"230"
-				"linux"	"231"
+				"windows"	"236" // "230"
+				"linux"	"237" // "231"
 			}
-			"FindMissTarget"
+			"FindMissTarget" // done
 			{
-				"windows"	"231"
-				"linux"	"232"
+				"windows"	"237" // "231"
+				"linux"	"238" // "232"
 			}
-			"HandleInteraction"
+			"HandleInteraction" // done
 			{
-				"windows"	"232"
-				"linux"	"233"
+				"windows"	"238" // "232"
+				"linux"	"239" // "233"
 			}
-			"BodyAngles"
+			"BodyAngles" // done
 			{
-				"windows"	"233"
-				"linux"	"234"
+				"windows"	"239" // "233"
+				"linux"	"240" // "234"
 			}
-			"BodyDirection2D"
+			"BodyDirection2D" // done
 			{
-				"windows"	"234"
-				"linux"	"235"
+				"windows"	"240" // "234"
+				"linux"	"241" // "235"
 			}
-			"BodyDirection3D"
+			"BodyDirection3D" // done
 			{
-				"windows"	"235"
-				"linux"	"236"
+				"windows"	"241" // "235"
+				"linux"	"242" // "236"
 			}
-			"HeadDirection2D"
+			"HeadDirection2D" // done
 			{
-				"windows"	"236"
-				"linux"	"237"
+				"windows"	"242" // "236"
+				"linux"	"243" // "237"
 			}
-			"HeadDirection3D"
+			"HeadDirection3D" // done
 			{
-				"windows"	"237"
-				"linux"	"238"
+				"windows"	"243" // "237"
+				"linux"	"244" // "238"
 			}
-			"EyeDirection2D"
+			"EyeDirection2D" // done
 			{
-				"windows"	"238"
-				"linux"	"239"
+				"windows"	"244" // "238"
+				"linux"	"245" // "239"
 			}
-			"EyeDirection3D"
+			"EyeDirection3D" // done
 			{
-				"windows"	"239"
-				"linux"	"240"
+				"windows"	"245" // "239"
+				"linux"	"246" // "240"
 			}
-			"GiveAmmo"
+			"GiveAmmo" // done
 			{
-				"windows"	"252"
-				"linux"	"253"
+				"windows"	"258" // "252"
+				"linux"	"259" // "253"
 			}
-			"NPC_TranslateActivity"
+			"NPC_TranslateActivity" // done
 			{
-				"windows"	"256"
-				"linux"	"257"
+				"windows"	"262" // "256"
+				"linux"	"263" // "257"
 			}
-			"RemoveAmmo" //int,char*
+			"RemoveAmmo" //int,char* // done
 			{
-				"windows"	"253"
-				"linux"	"255"
+				"windows"	"259" // "253"
+				"linux"	"261" // "255"
 			}
-			"GetAmmoCount"
+			"GetAmmoCount" // done
 			{
-				"windows"	"255"
-				"linux"	"256"
+				"windows"	"261" // "255"
+				"linux"	"262" // "256"
 			}
-			"Weapon_TranslateActivity"
+			"Weapon_TranslateActivity" // done
 			{
-				"windows"	"257"
-				"linux"	"258"
+				"windows"	"263" // "257"
+				"linux"	"264" // "258"
 			}
-			"Weapon_CanUse"
+			"Weapon_CanUse" // done
 			{
-				"windows"	"260"
-				"linux"	"261"
+				"windows"	"266" // "260"
+				"linux"	"267" // "261"
 			}
-			"Weapon_Equip"
+			"Weapon_Equip" // done
 			{
-				"windows"	"261"
-				"linux"	"262"
+				"windows"	"267" // "261"
+				"linux"	"268" // "262"
 			}
-			"Weapon_Drop"
+			"Weapon_Drop" // done
 			{
-				"windows"	"263"
-				"linux"	"264"
+				"windows"	"269" // "263"
+				"linux"	"270" // "264"
 			}
-			"Weapon_Switch"
+			"Weapon_Switch" // done
 			{
-				"windows"	"264"
-				"linux"	"265"
+				"windows"	"270" // "264"
+				"linux"	"271" // "265"
 			}
-			"Weapon_ShootPosition"
+			"Weapon_ShootPosition" // done
 			{
-				"windows"	"265"
-				"linux"	"266"
+				"windows"	"271" // "265"
+				"linux"	"272" // "266"
 			}
-			"Weapon_CanSwitchTo"
+			"Weapon_CanSwitchTo" // done
 			{
-				"windows"	"266"
-				"linux"	"267"
+				"windows"	"272" // "266"
+				"linux"	"273" // "267"
 			}
-			"Weapon_GetSlot"
+			"Weapon_GetSlot" // done
 			{
-				"windows"	"268"
-				"linux"	"269"
+				"windows"	"274" // "268"
+				"linux"	"275" // "269"
 			}
-			"CanBecomeServerRagdoll"
+			"CanBecomeServerRagdoll" // done
 			{
-				"windows"	"271"
-				"linux"	"272"
+				"windows"	"277" // "271"
+				"linux"	"278" // "272"
 			}
-			"OnTakeDamage_Alive"
+			"OnTakeDamage_Alive" // done
 			{
-				"windows"	"272"
-				"linux"		"273"
+				"windows"	"278" // "272"
+				"linux"		"279" // "273"
 			}
-			"OnTakeDamage_Dying"
+			"OnTakeDamage_Dying" // done
 			{
-				"windows"	"273"
-				"linux"	"274"
+				"windows"	"279" // "273"
+				"linux"	"280" // "274"
 			}
-			"OnTakeDamage_Dead"
+			"OnTakeDamage_Dead" // done
 			{
-				"windows"	"274"
-				"linux"	"275"
+				"windows"	"280" // "274"
+				"linux"	"281" // "275"
 			}
-			"OnFriendDamaged"
+			"OnFriendDamaged" // done
 			{
-				"windows"	"276"
-				"linux"	"277"
+				"windows"	"282" // "276"
+				"linux"	"283" // "277"
 			}
-			"NotifyFriendsOfDamage"
+			"NotifyFriendsOfDamage" // done
 			{
-				"windows"	"277"
-				"linux"	"278"
+				"windows"	"283" // "277"
+				"linux"	"284" // "278"
 			}
-			"OnPlayerKilledOther"
+			"OnPlayerKilledOther" // done
 			{
-				"windows"	"280"
-				"linux"	"281"
+				"windows"	"286" // "280"
+				"linux"	"287" // "281"
 			}
-			"CorpseGib"
+			"CorpseGib" // done
 			{
-				"windows"	"282"
-				"linux"	"283"
+				"windows"	"288" // "282"
+				"linux"	"289" // "283"
 			}
-			"ShouldGib"
+			"ShouldGib" // done
 			{
-				"windows"	"286"
-				"linux"	"287"
+				"windows"	"292" // "286"
+				"linux"	"293" // "287"
 			}
-			"OnKilledNPC"
+			"OnKilledNPC" // done
 			{
-				"windows"	"287"
-				"linux"	"288"
+				"windows"	"293" // "287"
+				"linux"	"294" // "288"
 			}
-			"Event_Gibbed"
+			"Event_Gibbed" // done
 			{
-				"windows"	"288"
-				"linux"	"289"
+				"windows"	"294" // "288"
+				"linux"	"295" // "289"
 			}
-			"Event_Dying"//void
+			"Event_Dying"//void // done
 			{
-				"windows"	"290"
-				"linux"	"291"
+				"windows"	"295" // "289" // wrong - "290"
+				"linux"	"297" // "291"
 			}
-			"BecomeRagdoll"
+			"BecomeRagdoll" // done
 			{
-				"windows"	"291"
-				"linux"	"292"
+				"windows"	"297" // "291"
+				"linux"	"298" // "292"
 			}
-			"BecomeRagdollBoogie"
+			"BecomeRagdollBoogie" // done
 			{
-				"windows"	"293"
-				"linux"	"294"
+				"windows"	"299" // "293"
+				"linux"	"300" // "294"
 			}
-			"CheckTraceHullAttack_Vector"
+			"CheckTraceHullAttack_Vector" // done
 			{
-				"windows"	"294"
-				"linux"	"296"
+				"windows"	"300" // "294"
+				"linux"	"302" // "296"
 			}
-			"CheckTraceHullAttack_Float"
+			"CheckTraceHullAttack_Float" // done
 			{
-				"windows"	"295"
-				"linux"	"295"
+				"windows"	"301" // "295"
+				"linux"	"301" // "295"
 			}
-			"IRelationType"
+			"IRelationType" // done
 			{
-				"windows"	"297"
-				"linux"	"298"
+				"windows"	"303" // "297"
+				"linux"	"304" // "298"
 			}
-			"IRelationPriority"
+			"IRelationPriority" // done
 			{
-				"windows"	"298"
-				"linux"	"299"
+				"windows"	"304" // "298"
+				"linux"	"305" // "299"
 			}
-			"IsInAVehicle"
+			"IsInAVehicle" // done
 			{
-				"windows"	"299"
-				"linux"	"300"
+				"windows"	"305" // "299"
+				"linux"	"306" // "300"
 			}
-			"GetVehicle"
+			"GetVehicle" // done
 			{
-				"windows"	"300"
-				"linux"	"301"
+				"windows"	"306" // "300"
+				"linux"	"307" // "301"
 			}
-			"GetVehicleEntity"
+			"GetVehicleEntity" // done
 			{
-				"windows"	"301"
-				"linux"	"302"
+				"windows"	"307" // "301"
+				"linux"	"308" // "302"
 			}
-			"CalcWeaponProficiency"
+			"CalcWeaponProficiency" // done
 			{
-				"windows"	"304"
-				"linux"	"305"
+				"windows"	"310" // "304"
+				"linux"	"311" // "305"
 			}
-			"GetAttackSpread"
+			"GetAttackSpread" // done
 			{
-				"windows"	"305"
-				"linux"	"306"
+				"windows"	"311" // "305"
+				"linux"	"312" // "306"
 			}
-			"GetSpreadBias"
+			"GetSpreadBias" // done
 			{
-				"windows"	"306"
-				"linux"	"307"
+				"windows"	"312" // "306"
+				"linux"	"313" // "307"
 			}
-			"DoMuzzleFlash"
+			"DoMuzzleFlash" // done
 			{
-				"windows"	"307"
-				"linux"	"308"
+				"windows"	"313" // "307"
+				"linux"	"314" // "308"
 			}
-			"AddEntityRelationship"
+			"AddEntityRelationship" // done
 			{
-				"windows"	"308"
-				"linux"	"309"
+				"windows"	"314" // "308"
+				"linux"	"315" // "309"
 			}
-			"RemoveEntityRelationship"
+			"RemoveEntityRelationship" // done
 			{
-				"windows"	"309"
-				"linux"	"310"
+				"windows"	"315" // "309"
+				"linux"	"316" // "310"
 			}
-			"AddClassRelationship"
+			"AddClassRelationship" // done
 			{
-				"windows"	"310"
-				"linux"	"311"
+				"windows"	"316" // "310"
+				"linux"	"317" // "311"
 			}
-			"OnChangeActiveWeapon"
+			"OnChangeActiveWeapon" // done
 			{
-				"windows"	"311"
-				"linux"	"312"
+				"windows"	"317" // "311"
+				"linux"	"318" // "312"
 			}
 			/* End CBaseCombatCharacter */
 			
 			
 			
 			/* CBasePlayer */
-			"PreThink"
+			"PreThink" // done
 			{
-				"windows"	"332"
-				"linux"	"333"
+				"windows"	"338" // "332"
+				"linux"	"339" // "333"
 			}
-			"PostThink"
+			"PostThink" // done
 			{
-				"windows"	"333"
-				"linux"	"334"
+				"windows"	"339" // "333"
+				"linux"	"340" // "334"
 			}
-			"FlashlightIsOn"
+			"FlashlightIsOn" // done
 			{
-				"windows"	"354"
-				"linux"	"355"
+				"windows"	"360" // "354"
+				"linux"	"361" // "355"
 			}
-			"IsIlluminatedByFlashlight"
+			"IsIlluminatedByFlashlight" // done
 			{
-				"windows"	"357"
-				"linux"	"358"
+				"windows"	"363" // "357"
+				"linux"	"364" // "358"
 			}
-			"SetAnimation"
+			"SetAnimation" // done
 			{
-				"windows"	"366"
-				"linux"	"367"
+				"windows"	"372" // "366"
+				"linux"	"373" // "367"
 			}
-			"EntSelectSpawnPoint"
+			"EntSelectSpawnPoint" // done
 			{
-				"windows"	"392"
-				"linux"	"393"
+				"windows"	"399" // "392"
+				"linux"	"400" // "393"
 			}
-			"GetInVehicle"
+			"GetInVehicle" // done
 			{
-				"windows"	"393"
-				"linux"	"394"
+				"windows"	"400" // "393"
+				"linux"	"401" // "394"
 			}
-			"LeaveVehicle"
+			"LeaveVehicle" // done
 			{
-				"windows"	"394"
-				"linux"	"395"
+				"windows"	"401" // "394"
+				"linux"	"402" // "395"
 			}
-			"BumpWeapon"
+			"BumpWeapon" // done
 			{
-				"windows"	"397"
-				"linux"	"398"
+				"windows"	"404" // "397"
+				"linux"	"405" // "398"
 			}
-			"GiveNamedItem"
+			"GiveNamedItem" // done
 			{
-				"windows"	"401"
-				"linux"	"402"
+				"windows"	"408" // "401"
+				"linux"	"409" // "402"
 			}
-			"FindUseEntity"
+			"FindUseEntity" // done
 			{
-				"windows"	"407"
-				"linux"	"408"
+				"windows"	"414" // "407"
+				"linux"	"415" // "408"
 			}
-			"IsUseableEntity"
+			"IsUseableEntity" // done
 			{
-				"windows"	"408"
-				"linux"	"409"
+				"windows"	"415" // "408"
+				"linux"	"416" // "409"
 			}
-			"PickupObject"
+			"PickupObject" // done
 			{
-				"windows"	"409"
-				"linux"	"410"
+				"windows"	"416" // "409"
+				"linux"	"417" // "410"
 			}
-			"ForceDropOfCarriedPhysObjects"
+			"ForceDropOfCarriedPhysObjects" // done
 			{
-				"windows"	"410"
-				"linux"	"411"
+				"windows"	"417" // "410"
+				"linux"	"418" // "411"
 			}
-			"GetAutoaimVector_Float" // CBasePlayer::GetAutoaimVector(float)
+			"GetAutoaimVector_Float" // CBasePlayer::GetAutoaimVector(float) // done
 			{
-				"windows"	"415"
-				"linux"	"414"
+				"windows"	"422" // "415"
+				"linux"	"421" // "414"
 			}
-			"PlayerRunCommand"
+			"PlayerRunCommand" // done
 			{
-				"windows"	"419"
-				"linux"	"420"
+				"windows"	"426" // "419"
+				"linux"	"427" // "420"
 			}
-			"ModifyOrAppendPlayerCriteria"
+			"ModifyOrAppendPlayerCriteria" // done
 			{
-				"windows"	"423"
-				"linux"	"424"
+				"windows"	"430" // "423"
+				"linux"	"431" // "424"
 			}
-			"CreateRagdollEntity"
+			"CreateRagdollEntity" // done
 			{
-				"windows"	"425"
-				"linux"	"426"
+				"windows"	"432" // "425"
+				"linux"	"433" // "426"
 			}
-			"IsFollowingPhysics"
+			"IsFollowingPhysics" // done
 			{
-				"windows"	"427"
-				"linux"	"428"
+				"windows"	"434" // "427"
+				"linux"	"435" // "428"
 			}
 			/* End CBasePlayer */
 			
 			
 			
 			/* CAI_BaseNPC */
-			"NPCInit"
+			"NPCInit" // done
 			{
-				"windows"	"321"
-				"linux"	"322"
+				"windows"	"327" // "321"
+				"linux"	"328" // "322"
 			}
-			"PostNPCInit"
+			"PostNPCInit" // done
 			{
-				"windows"	"322"
-				"linux"	"323"
+				"windows"	"328" // "322"
+				"linux"	"329" // "323"
 			}
-			"StartNPC"
+			"StartNPC" // done
 			{
-				"windows"	"323"
-				"linux"	"324"
+				"windows"	"329" // "323"
+				"linux"	"330" // "324"
 			}
-			"CleanupOnDeath"
+			"CleanupOnDeath" // done
 			{
-				"windows"	"324"
-				"linux"	"325"
+				"windows"	"330" // "324"
+				"linux"	"331" // "325"
 			}
-			"CreateComponents"
+			"CreateComponents" // done
 			{
-				"windows"	"325"
-				"linux"	"326"
+				"windows"	"331" // "325"
+				"linux"	"332" // "326"
 			}
-			"CreateSenses"
+			"CreateSenses" // done
 			{
-				"windows"	"326"
-				"linux"	"327"
+				"windows"	"332" // "326"
+				"linux"	"333" // "327"
 			}
-			"CreateMoveProbe"
+			"CreateMoveProbe" // done
 			{
-				"windows"	"327"
-				"linux"	"328"
+				"windows"	"333" // "327"
+				"linux"	"334" // "328"
 			}
-			"CreateMotor"
+			"CreateMotor" // done
 			{
-				"windows"	"328"
-				"linux"	"329"
+				"windows"	"334" // "328"
+				"linux"	"335" // "329"
 			}
-			"CreateLocalNavigator"
+			"CreateLocalNavigator" // done
 			{
-				"windows"	"329"
-				"linux"	"330"
+				"windows"	"335" // "329"
+				"linux"	"336" // "330"
 			}
-			"CreateNavigator"
+			"CreateNavigator" // done
 			{
-				"windows"	"330"
-				"linux"	"331"
+				"windows"	"336" // "330"
+				"linux"	"337" // "331"
 			}
-			"CreatePathfinder"
+			"CreatePathfinder" // done
 			{
-				"windows"	"331"
-				"linux"	"332"
+				"windows"	"337" // "331"
+				"linux"	"338" // "332"
 			}
-			"CreateTacticalServices"
+			"CreateTacticalServices" // done
 			{
-				"windows"	"332"
-				"linux"	"333"
+				"windows"	"338" // "332"
+				"linux"	"339" // "333"
 			}
-			"NPCThink"
+			"NPCThink" // done
 			{
-				"windows"	"333"
-				"linux"	"334"
+				"windows"	"339" // "333"
+				"linux"	"340" // "334"
 			}
-			"RunAI"
+			"RunAI" // done
 			{
-				"windows"	"334"
-				"linux"	"335"
+				"windows"	"340" // "334"
+				"linux"	"341" // "335"
 			}
-			"GatherConditions"
+			"GatherConditions" // done
 			{
-				"windows"	"335"
-				"linux"	"336"
+				"windows"	"341" // "335"
+				"linux"	"342" // "336"
 			}
-			"PrescheduleThink"
+			"PrescheduleThink" // done
 			{
-				"windows"	"336"
-				"linux"	"337"
+				"windows"	"342" // "336"
+				"linux"	"343" // "337"
 			}
-			"OnScheduleChange"
+			"OnScheduleChange" // done
 			{
-				"windows"	"338"
-				"linux"	"339"
+				"windows"	"344" // "338"
+				"linux"	"345" // "339"
 			}
-			"OnStartSchedule"
+			"OnStartSchedule" // done
 			{
-				"windows"	"339"
-				"linux"	"340"
+				"windows"	"345" // "339"
+				"linux"	"346" // "340"
 			}
-			"SelectSchedule"
+			"SelectSchedule" // done
 			{
-				"windows"	"340"
-				"linux"	"341"
+				"windows"	"346" // "340"
+				"linux"	"347" // "341"
 			}
-			"SelectFailSchedule"
+			"SelectFailSchedule" // done
 			{
-				"windows"	"341"
-				"linux"	"342"
+				"windows"	"347" // "341"
+				"linux"	"348" // "342"
 			}
-			"TranslateSchedule"
+			"TranslateSchedule" // done
 			{
-				"windows"	"342"
-				"linux"	"343"
+				"windows"	"348" // "342"
+				"linux"	"349" // "343"
 			}
-			"StartTask"
+			"StartTask" // done
 			{
-				"windows"	"344"
-				"linux"	"344"
+				"windows"	"349" // "344"
+				"linux"	"350" // "344"
 			}
-			"RunTask"
+			"RunTask" // done
 			{
-				"windows"	"346"
-				"linux"	"345"
+				"windows"	"350" // "346"
+				"linux"	"351" // "345"
 			}
-			"IsInterruptable"
+			"IsInterruptable" // done
 			{
-				"windows"	"347"
-				"linux"	"346"
+				"windows"	"351" // "347"
+				"linux"	"352" // "346"
 			}
 			"OnStartScene" //CAI_BaseNPC::OnStartScene(void) - nullsub
 			{
 				//FF 90 ? ? ? ? 83 BF ? ? ? ? ? 8B CF 0F 95 C0 88 83 - displ is our offs
-				"windows"	"348"
-				"linux"	"347"
+				"windows"	"352" // "348"
+				"linux"	"353" // "347"
 			}
-			"ShouldPlayerAvoid"
+			"ShouldPlayerAvoid" // done
 			{
-				"windows"	"349"
-				"linux"	"348"
+				"windows"	"353" // "349"
+				"linux"	"354" // "348"
 			}
-			"ShouldAlwaysThink"
+			"ShouldAlwaysThink" // done
 			{
-				"windows"	"352"
-				"linux"	"351"
+				"windows"	"356" // "352"
+				"linux"	"357" // "351"
 			}
-			"PostRunStopMoving"
+			"PostRunStopMoving" // done
 			{
-				"windows"	"354"
-				"linux"	"353"
+				"windows"	"358" // "354"
+				"linux"	"359" // "353"
 			}
-			"GetSchedule"
+			"GetSchedule" // done
 			{
-				"windows"	"355"
-				"linux"	"356"
+				"windows"	"361" // "355"
+				"linux"	"362" // "356"
 			}
-			"GetGlobalScheduleId"
+			"GetGlobalScheduleId" // done
 			{
-				"windows"	"357"
-				"linux"	"358"
+				"windows"	"363" // "357"
+				"linux"	"364" // "358"
 			}
-			"TaskFail"
+			"TaskFail" // done
 			{
-				"windows"	"358"
-				"linux"	"359"
+				"windows"	"364" // "358"
+				"linux"	"365" // "359"
 			}
-			"TaskName"
+			"TaskName" // done
 			{
-				"windows"	"359"
-				"linux"	"360"
+				"windows"	"365" // "359"
+				"linux"	"366" // "360"
 			}
-			"GetSchedulingErrorName"
+			"GetSchedulingErrorName" // done
 			{
-				"windows"	"361"
-				"linux"	"362"
+				"windows"	"367" // "361"
+				"linux"	"368" // "362"
 			}
-			"BuildScheduleTestBits"
+			"BuildScheduleTestBits" // done
 			{
-				"windows"	"363"
-				"linux"	"364"
+				"windows"	"369" // "363"
+				"linux"	"370" // "364"
 			}
-			"GetNewSchedule"
+			"GetNewSchedule" // done
 			{
-				"windows"	"364"
-				"linux"	"365"
+				"windows"	"370" // "364"
+				"linux"	"371" // "365"
 			}
-			"GetFailSchedule"
+			"GetFailSchedule" // done
 			{
-				"windows"	"365"
-				"linux"	"366"
+				"windows"	"371" // "365"
+				"linux"	"372" // "366"
 			}
-			"CanFlinch"
+			"CanFlinch" // done
 			{
-				"windows"	"366"
-				"linux"	"367"
+				"windows"	"372" // "366"
+				"linux"	"373" // "367"
 			}
-			"CheckFlinches"
+			"CheckFlinches" // done
 			{
-				"windows"	"367"
-				"linux"	"368"
+				"windows"	"373" // "367"
+				"linux"	"374" // "368"
 			}
-			"PlayFlinchGesture"
+			"PlayFlinchGesture" // done
 			{
-				"windows"	"368"
-				"linux"	"369"
+				"windows"	"374" // "368"
+				"linux"	"375" // "369"
 			}
-			"GetRunningBehavior"
+			"GetRunningBehavior" // done
 			{
-				"windows"	"371"
-				"linux"	"372"
+				"windows"	"377" // "371"
+				"linux"	"378" // "372"
 			}
-			"ShouldAcceptGoal"
+			"ShouldAcceptGoal" // done
 			{
-				"windows"	"372"
-				"linux"	"373"
+				"windows"	"378" // "372"
+				"linux"	"379" // "373"
 			}
-			"OnClearGoal"
+			"OnClearGoal" // done
 			{
-				"windows"	"373"
-				"linux"	"374"
+				"windows"	"379" // "373"
+				"linux"	"380" // "374"
 			}
-			"OnBehaviorChangeStatus"
+			"OnBehaviorChangeStatus" // done
 			{
-				"windows"	"374"
-				"linux"	"375"
+				"windows"	"380" // "374"
+				"linux"	"381" // "375"
 			}
-			"AccessBehaviors"
+			"AccessBehaviors" // done
 			{
-				"windows"	"375"
-				"linux"	"376"
+				"windows"	"381" // "375"
+				"linux"	"382" // "376"
 			}
-			"NumBehaviors"
+			"NumBehaviors" // done
 			{
-				"windows"	"376"
-				"linux"	"377"
+				"windows"	"382" // "376"
+				"linux"	"383" // "377"
 			}
-			"SelectIdealState"
+			"SelectIdealState" // done
 			{
-				"windows"	"379"
-				"linux"	"378"
+				"windows"	"385" // "379"
+				"linux"	"386" // "378"
 			}
-			"OnStateChange"
+			"OnStateChange" // done
 			{
-				"windows"	"381"
-				"linux"	"382"
+				"windows"	"387" // "381"
+				"linux"	"388" // "382"
 			}
-			"UpdateEfficiency"
+			"UpdateEfficiency" // done
 			{
-				"windows"	"382"
-				"linux"	"383"
+				"windows"	"388" // "382"
+				"linux"	"389" // "383"
 			}
-			"Wake"
+			"Wake" // done
 			{
-				"windows"	"383"
-				"linux"	"384"
+				"windows"	"389" // "383"
+				"linux"	"390" // "384"
 			}
-			"SetActivity"
+			"SetActivity" // done
 			{
-				"windows"	"384"
-				"linux"	"385"
+				"windows"	"390" // "384"
+				"linux"	"391" // "385"
 			}
-			"IsActivityMovementPhased"
+			"IsActivityMovementPhased" // done
 			{
-				"windows"	"385"
-				"linux"	"386"
+				"windows"	"391" // "385"
+				"linux"	"392" // "386"
 			}
-			"OnChangeActivity"
+			"OnChangeActivity" // done
 			{
-				"windows"	"386"
-				"linux"	"387"
+				"windows"	"392" // "386"
+				"linux"	"393" // "387"
 			}
-			"QueryHearSound"
+			"QueryHearSound" // done
 			{
-				"windows"	"387"
-				"linux"	"388"
+				"windows"	"393" // "387"
+				"linux"	"394" // "388"
 			}
-			"QuerySeeEntity"
+			"QuerySeeEntity" // done
 			{
-				"windows"	"388"
-				"linux"	"389"
+				"windows"	"394" // "388"
+				"linux"	"395" // "389"
 			}
-			"OnLooked"
+			"OnLooked" // done
 			{
-				"windows"	"389"
-				"linux"	"390"
+				"windows"	"395" // "389"
+				"linux"	"396" // "390"
 			}
-			"OnListened"
+			"OnListened" // done
 			{
-				"windows"	"390"
-				"linux"	"391"
+				"windows"	"396" // "390"
+				"linux"	"397" // "391"
 			}
-			"OnSeeEntity"
+			"OnSeeEntity" // done
 			{
-				"windows"	"391"
-				"linux"	"392"
+				"windows"	"397" // "391"
+				"linux"	"398" // "392"
 			}
-			"ShouldNotDistanceCull"
+			"ShouldNotDistanceCull" // done
 			{
-				"windows"	"392"
-				"linux"	"393"
+				"windows"	"398" // "392"
+				"linux"	"399" // "393"
 			}
-			"GetSoundInterests"
+			"GetSoundInterests" // done
 			{
-				"windows"	"393"
-				"linux"	"394"
+				"windows"	"399" // "393"
+				"linux"	"400" // "394"
 			}
-			"GetSoundPriority"
+			"GetSoundPriority" // done
 			{
-				"windows"	"394"
-				"linux"	"395"
+				"windows"	"400" // "394"
+				"linux"	"401" // "395"
 			}
-			"GetBestSound"
+			"GetBestSound" // done
 			{
-				"windows"	"395"
-				"linux"	"396"
+				"windows"	"401" // "395"
+				"linux"	"402" // "396"
 			}
-			"GetBestScent"
+			"GetBestScent" // done
 			{
-				"windows"	"396"
-				"linux"	"397"
+				"windows"	"402" // "396"
+				"linux"	"403" // "397"
 			}
-			"HearingSensitivity"
+			"HearingSensitivity" // done
 			{
-				"windows"	"397"
-				"linux"	"398"
+				"windows"	"403" // "397"
+				"linux"	"404" // "398"
 			}
-			"ShouldIgnoreSound"
+			"ShouldIgnoreSound" // done
 			{
-				"windows"	"398"
-				"linux"	"399"
+				"windows"	"404" // "398"
+				"linux"	"405" // "399"
 			}
-			"ClearSenseConditions"
+			"ClearSenseConditions" // done
 			{
-				"windows"	"399"
-				"linux"	"400"
+				"windows"	"405" // "399"
+				"linux"	"406" // "400"
 			}
-			"BestEnemy"
+			"BestEnemy" // done
 			{
-				"windows"	"400"
-				"linux"	"401"
+				"windows"	"406" // "400"
+				"linux"	"407" // "401"
 			}
-			"IsValidEnemy"
+			"IsValidEnemy" // done
 			{
-				"windows"	"401"
-				"linux"	"402"
+				"windows"	"407" // "401"
+				"linux"	"408" // "402"
 			}
-			"CanBeAnEnemyOf"
+			"CanBeAnEnemyOf" // done
 			{
-				"windows"	"402"
-				"linux"	"403"
+				"windows"	"408" // "402"
+				"linux"	"409" // "403"
 			}
-			"ShouldChooseNewEnemy"
+			"ShouldChooseNewEnemy" // done
 			{
-				"windows"	"403"
-				"linux"	"404"
+				"windows"	"409" // "403"
+				"linux"	"410" // "404"
 			}
-			"GatherEnemyConditions"
+			"GatherEnemyConditions" // done
 			{
-				"windows"	"404"
-				"linux"	"405"
+				"windows"	"410" // "404"
+				"linux"	"411" // "405"
 			}
-			"StartTargetHandling"
+			"StartTargetHandling" // done
 			{
-				"windows"	"406"
-				"linux"	"406"
+				"windows"	"412" // "406"
+				"linux"	"413" // "406"
 			}
-			"CreateCustomTarget"
+			"CreateCustomTarget" // done
 			{
-				"windows"	"407"
-				"linux"	"407"
+				"windows"	"413" // "407"
+				"linux"	"414" // "407"
 			}
-			"AllowedToIgnite"
+			"AllowedToIgnite" // done
 			{
-				"windows"	"409"
-				"linux"	"408"
+				"windows"	"415" // "409"
+				"linux"	"416" // "408"
 			}
-			"IsCommandable"
+			"IsCommandable" // done
 			{
-				"windows"	"411"
-				"linux"	"412"
+				"windows"	"417" // "411"
+				"linux"	"418" // "412"
 			}
-			"IsPlayerAlly"
+			"IsPlayerAlly" // done
 			{
-				"windows"	"412"
-				"linux"	"413"
+				"windows"	"418" // "412"
+				"linux"	"419" // "413"
 			}
-			"IsMedic"
+			"IsMedic" // done
 			{
-				"windows"	"413"
-				"linux"	"414"
+				"windows"	"419" // "413"
+				"linux"	"420" // "414"
 			}
-			"IsCommandMoving"
+			"IsCommandMoving" // done
 			{
-				"windows"	"414"
-				"linux"	"415"
+				"windows"	"420" // "414"
+				"linux"	"421" // "415"
 			}
-			"ShouldAutoSummon"
+			"ShouldAutoSummon" // done
 			{
-				"windows"	"415"
-				"linux"	"416"
+				"windows"	"421" // "415"
+				"linux"	"422" // "416"
 			}
-			"SetCommandGoal"
+			"SetCommandGoal" // done
 			{
-				"windows"	"416"
-				"linux"	"417"
+				"windows"	"422" // "416"
+				"linux"	"423" // "417"
 			}
-			"ClearCommandGoal"
+			"ClearCommandGoal" // done
 			{
-				"windows"	"417"
-				"linux"	"418"
+				"windows"	"423" // "417"
+				"linux"	"424" // "418"
 			}
-			"OnMoveOrder"
+			"OnMoveOrder" // done
 			{
-				"windows"	"419"
-				"linux"	"419"
+				"windows"	"425" // "419"
+				"linux"	"426" // "419"
 			}
-			"IsValidCommandTarget"
+			"IsValidCommandTarget" // done
 			{
-				"windows"	"420"
-				"linux"	"421"
+				"windows"	"426" // "420"
+				"linux"	"427" // "421"
 			}
-			"OnMoveToCommandGoalFailed"
+			"OnMoveToCommandGoalFailed" // done
 			{
-				"windows"	"421"
-				"linux"	"422"
+				"windows"	"427" // "421"
+				"linux"	"428" // "422"
 			}
-			"GetSquadCommandRepresentative"
+			"GetSquadCommandRepresentative" // done
 			{
-				"windows"	"422"
-				"linux"	"423"
+				"windows"	"428" // "422"
+				"linux"	"429" // "423"
 			}
-			"TargetOrder"
+			"TargetOrder" // done
 			{
-				"windows"	"423"
-				"linux"	"424"
+				"windows"	"429" // "423"
+				"linux"	"430" // "424"
 			}
-			"MoveOrder"
+			"MoveOrder" // done
 			{
-				"windows"	"424"
-				"linux"	"425"
+				"windows"	"430" // "424"
+				"linux"	"431" // "425"
 			}
-			"CanBeUsedAsAFriend"
+			"CanBeUsedAsAFriend" // done
 			{
-				"windows"	"425"
-				"linux"	"426"
+				"windows"	"431" // "425"
+				"linux"	"432" // "426"
 			}
-			"CanRunAScriptedNPCInteraction"
+			"CanRunAScriptedNPCInteraction" // done
 			{
-				"windows"	"426"
-				"linux"	"427"
+				"windows"	"432" // "426"
+				"linux"	"433" // "427"
 			}
-			"CanPlaySentence"
+			"CanPlaySentence" // done
 			{
-				"windows"	"427"
-				"linux"	"428"
+				"windows"	"434" // "427"
+				"linux"	"435" // "428"
 			}
-			"PlayScriptedSentence"
+			"PlayScriptedSentence" // done
 			{
-				"windows"	"430"
-				"linux"	"421"
+				"windows"	"436" // "430"
+				"linux"	"" // "421"
 			}
-			"FOkToMakeSound"
+			"FOkToMakeSound" // done
 			{
-				"windows"	"431"
-				"linux"	"432"
+				"windows"	"437" // "431"
+				"linux"	"438" // "432"
 			}
-			"JustMadeSound"
+			"JustMadeSound" // done
 			{
-				"windows"	"432"
-				"linux"	"433"
+				"windows"	"438" // "432"
+				"linux"	"439" // "433"
 			}
-			"DeathSound"
+			"DeathSound" // done
 			{
-				"windows"	"433"
-				"linux"	"434"
+				"windows"	"439" // "433"
+				"linux"	"440" // "434"
 			}
-			"AlertSound"
+			"AlertSound" // done
 			{
-				"windows"	"434"
-				"linux"	"435"
+				"windows"	"440" // "434"
+				"linux"	"441" // "435"
 			}
-			"IdleSound"
+			"IdleSound" // done
 			{
-				"windows"	"435"
-				"linux"	"436"
+				"windows"	"441" // "435"
+				"linux"	"442" // "436"
 			}
-			"PainSound"
+			"PainSound" // done
 			{
-				"windows"	"436"
-				"linux"	"437"
+				"windows"	"442" // "436"
+				"linux"	"443" // "437"
 			}
-			"FearSound"
+			"FearSound" // done
 			{
-				"windows"	"437"
-				"linux"	"438"
+				"windows"	"443" // "437"
+				"linux"	"444" // "438"
 			}
-			"LostEnemySound"
+			"LostEnemySound" // done
 			{
-				"windows"	"438"
-				"linux"	"439"
+				"windows"	"444" // "438"
+				"linux"	"445" // "439"
 			}
-			"FoundEnemySound"
+			"FoundEnemySound" // done
 			{
-				"windows"	"439"
-				"linux"	"440"
+				"windows"	"445" // "439"
+				"linux"	"446" // "440"
 			}
-			"BarnacleDeathSound"
+			"BarnacleDeathSound" // done
 			{
-				"windows"	"440"
-				"linux"	"441"
+				"windows"	"446" // "440"
+				"linux"	"447" // "441"
 			}
-			"SpeakSentence"
+			"SpeakSentence" // done
 			{
-				"windows"	"441"
-				"linux"	"442"
+				"windows"	"447" // "441"
+				"linux"	"448" // "442"
 			}
-			"ShouldPlayIdleSound"
+			"ShouldPlayIdleSound" // done
 			{
-				"windows"	"442"
-				"linux"	"443"
+				"windows"	"448" // "442"
+				"linux"	"449" // "443"
 			}
-			"MakeAIFootstepSound"
+			"MakeAIFootstepSound" // done
 			{
-				"windows"	"443"
-				"linux"	"444"
+				"windows"	"449" // "443"
+				"linux"	"450" // "444"
 			}
-			"GetExpresser"
+			"GetExpresser" // done
 			{
-				"windows"	"444"
-				"linux"	"445"
+				"windows"	"450" // "444"
+				"linux"	"451" // "445"
 			}
-			"CanRespondToEvent"
+			"CanRespondToEvent" // done
 			{
-				"windows"	"445"
-				"linux"	"446"
+				"windows"	"451" // "445"
+				"linux"	"452" // "446"
 			}
-			"RespondedTo"
+			"RespondedTo" // done
 			{
-				"windows"	"446"
-				"linux"	"447"
+				"windows"	"452" // "446"
+				"linux"	"453" // "447"
 			}
-			"PlayerHasIlluminatedNPC"
+			"PlayerHasIlluminatedNPC" // done
 			{
-				"windows"	"447"
-				"linux"	"448"
+				"windows"	"453" // "447"
+				"linux"	"454" // "448"
 			}
-			"CapabilitiesGet"
+			"CapabilitiesGet" // done
 			{
-				"windows"	"448"
-				"linux"	"449"
+				"windows"	"454" // "448"
+				"linux"	"455" // "449"
 			}
-			"IsNavigationUrgent"
+			"IsNavigationUrgent" // done
 			{
-				"windows"	"449"
-				"linux"	"450"
+				"windows"	"455" // "449"
+				"linux"	"456" // "450"
 			}
-			"ShouldFailNav"
+			"ShouldFailNav" // done
 			{
-				"windows"	"450"
-				"linux"	"451"
+				"windows"	"456" // "450"
+				"linux"	"457" // "451"
 			}
-			"ShouldBruteForceFailedNav"
+			"ShouldBruteForceFailedNav" // done
 			{
-				"windows"	"451"
-				"linux"	"452"
+				"windows"	"457" // "451"
+				"linux"	"458" // "452"
 			}
-			"GetTimeToNavGoal"
+			"GetTimeToNavGoal" // done
 			{
-				"windows"	"452"
-				"linux"	"453"
+				"windows"	"458" // "452"
+				"linux"	"459" // "453"
 			}
-			"MovementCost"
+			"MovementCost" // done
 			{
-				"windows"	"453"
-				"linux"	"454"
+				"windows"	"459" // "453"
+				"linux"	"460" // "454"
 			}
-			"CalcIdealYaw"
+			"CalcIdealYaw" // done
 			{
-				"windows"	"454"
-				"linux"	"455"
+				"windows"	"460" // "454"
+				"linux"	"461" // "455"
 			}
-			"MaxYawSpeed"
+			"MaxYawSpeed" // done
 			{
-				"windows"	"455"
-				"linux"	"456"
+				"windows"	"461" // "455"
+				"linux"	"462" // "456"
 			}
-			"AddFacingTarget_E_V_F_F_F"
+			"AddFacingTarget_E_V_F_F_F" // done
 			{
-				"windows"	"456"
-				"linux"	"459"
+				"windows"	"462" // "456"
+				"linux"	"465" // "459"
 			}
-			"AddFacingTarget_V_F_F_F"
+			"AddFacingTarget_V_F_F_F" // done
 			{
-				"windows"	"457"
-				"linux"	"458"
+				"windows"	"463" // "457"
+				"linux"	"464" // "458"
 			}
-			"AddFacingTarget_E_F_F_F"
+			"AddFacingTarget_E_F_F_F" // done
 			{
-				"windows"	"458"
-				"linux"	"457"
+				"windows"	"464" // "458"
+				"linux"	"463" // "457"
 			}
-			"IsJumpLegal"
+			"IsJumpLegal" // done
 			{
-				"windows"	"460"
-				"linux"	"461"
+				"windows"	"466" // "460"
+				"linux"	"467" // "461"
 			}
-			"StepHeight"
+			"StepHeight" // done
 			{
-				"windows"	"461"
-				"linux"	"462"
+				"windows"	"467" // "461"
+				"linux"	"468" // "462"
 			}
-			"GetJumpGravity"
+			"GetJumpGravity" // done
 			{
-				"windows"	"463"
-				"linux"	"464"
+				"windows"	"469" // "463"
+				"linux"	"470" // "464"
 			}
-			"OverrideMove"
+			"OverrideMove" // done
 			{
-				"windows"	"464"
-				"linux"	"465"
+				"windows"	"470" // "464"
+				"linux"	"471" // "465"
 			}
-			"OverrideMoveFacing"
+			"OverrideMoveFacing" // done
 			{
-				"windows"	"465"
-				"linux"	"466"
+				"windows"	"471" // "465"
+				"linux"	"472" // "466"
 			}
-			"IsUnusableNode"
+			"IsUnusableNode" // done
 			{
-				"windows"	"466"
-				"linux"	"467"
+				"windows"	"472" // "466"
+				"linux"	"473" // "467"
 			}
-			"ValidateNavGoal"
+			"ValidateNavGoal" // done
 			{
-				"windows"	"467"
-				"linux"	"468"
+				"windows"	"473" // "467"
+				"linux"	"474" // "468"
 			}
-			"IsCurTaskContinuousMove"
+			"IsCurTaskContinuousMove" // done
 			{
-				"windows"	"468"
-				"linux"	"469"
+				"windows"	"474" // "468"
+				"linux"	"475" // "469"
 			}
-			"IsValidMoveAwayDest"
+			"IsValidMoveAwayDest" // done
 			{
-				"windows"	"469"
-				"linux"	"470"
+				"windows"	"475" // "469"
+				"linux"	"476" // "470"
 			}
-			"OnMovementFailed"
+			"OnMovementFailed" // done
 			{
-				"windows"	"470"
-				"linux"	"471"
+				"windows"	"476" // "470"
+				"linux"	"477" // "471"
 			}
-			"OnMovementComplete"
+			"OnMovementComplete" // done
 			{
-				"windows"	"471"
-				"linux"	"472"
+				"windows"	"477" // "471"
+				"linux"	"478" // "472"
 			}
-			"IsUnreachable"
+			"IsUnreachable" // done
 			{
-				"windows"	"472"
-				"linux"	"473"
+				"windows"	"478" // "472"
+				"linux"	"479" // "473"
 			}
-			"OnObstructingDoor"
+			"OnObstructingDoor" // done
 			{
-				"windows"	"473"
-				"linux"	"477"
+				"windows"	"479" // "473"
+				"linux"	"483" // "477"
 			}
-			"GetNodeViewOffset"
+			"GetNodeViewOffset" // done
 			{
-				"windows"	"475"
-				"linux"	"479"
+				"windows"	"481" // "475"
+				"linux"	"485" // "479"
 			}
-			"EyeOffset"
+			"EyeOffset" // done
 			{
-				"windows"	"476"
-				"linux"	"480"
+				"windows"	"482" // "476"
+				"linux"	"486" // "480"
 			}
-			"EyeLookTarget"
+			"EyeLookTarget" // done
 			{
-				"windows"	"477"
-				"linux"	"481"
+				"windows"	"483" // "477"
+				"linux"	"487" // "481"
 			}
-			"AddLookTarget_V"
+			"AddLookTarget_V" // done
 			{
-				"windows"	"478"
-				"linux"	"483"
+				"windows"	"484" // "478"
+				"linux"	"489" // "483"
 			}
-			"AddLookTarget_E"
+			"AddLookTarget_E" // done
 			{
-				"windows"	"479"
-				"linux"	"482"
+				"windows"	"485" // "479"
+				"linux"	"488" // "482"
 			}
-			"SetHeadDirection"
+			"SetHeadDirection" // done
 			{
-				"windows"	"480"
-				"linux"	"484"
+				"windows"	"486" // "480"
+				"linux"	"490" // "484"
 			}
-			"MaintainLookTargets"
+			"MaintainLookTargets" // done
 			{
-				"windows"	"481"
-				"linux"	"485"
+				"windows"	"487" // "481"
+				"linux"	"491" // "485"
 			}
-			"ValidEyeTarget"
+			"ValidEyeTarget" // done
 			{
-				"windows"	"482"
-				"linux"	"486"
+				"windows"	"488" // "482"
+				"linux"	"492" // "486"
 			}
-			"FacingPosition"
+			"FacingPosition" // done
 			{
-				"windows"	"483"
-				"linux"	"487"
+				"windows"	"489" // "483"
+				"linux"	"493" // "487"
 			}
-			"MaintainTurnActivity"
+			"MaintainTurnActivity" // done
 			{
-				"windows"	"484"
-				"linux"	"488"
+				"windows"	"490" // "484"
+				"linux"	"494" // "488"
 			}
-			"AimGun"
+			"AimGun" // done
 			{
-				"windows"	"485"
-				"linux"	"489"
+				"windows"	"491" // "485"
+				"linux"	"495" // "489"
 			}
-			"SetAim"
+			"SetAim" // done
 			{
-				"windows"	"486"
-				"linux"	"490"
+				"windows"	"492" // "486"
+				"linux"	"496" // "490"
 			}
-			"RelaxAim"
+			"RelaxAim" // done
 			{
-				"windows"	"487"
-				"linux"	"491"
+				"windows"	"493" // "487"
+				"linux"	"497" // "491"
 			}
-			"GetAlternateMoveShootTarget"
+			"GetAlternateMoveShootTarget" // done
 			{
-				"windows"	"488"
-				"linux"	"492"
+				"windows"	"494" // "488"
+				"linux"	"498" // "492"
 			}
-			"InputOutsideTransition"
+			"InputOutsideTransition" // !!! deleted ?
 			{
-				"windows"	"489"
-				"linux"	"493"
+				"windows"	"496" // "489"
+				"linux"	"500" // "493"
 			}
-			"InputInsideTransition"
+			"InputInsideTransition" // done
 			{
-				"windows"	"490"
-				"linux"	"494"
+				"windows"	"496" // "490"
+				"linux"	"500" // "494"
 			}
-			"SetScriptedScheduleIgnoreConditions"
+			"SetScriptedScheduleIgnoreConditions" // done
 			{
-				"windows"	"491"
-				"linux"	"495"
+				"windows"	"497" // "491"
+				"linux"	"501" // "495"
 			}
-			"ScheduledMoveToGoalEntity"
+			"ScheduledMoveToGoalEntity" // done
 			{
-				"windows"	"492"
-				"linux"	"496"
+				"windows"	"498" // "492"
+				"linux"	"502" // "496"
 			}
-			"ScheduledFollowPath"
+			"ScheduledFollowPath" // done
 			{
-				"windows"	"493"
-				"linux"	"497"
+				"windows"	"499" // "493"
+				"linux"	"503" // "497"
 			}
-			"GetEnemies"
+			"GetEnemies" // done
 			{
-				"windows"	"494"
-				"linux"	"498"
+				"windows"	"500" // "494"
+				"linux"	"504" // "498"
 			}
-			"UpdateEnemyMemory"
+			"UpdateEnemyMemory" // done
 			{
-				"windows"	"496"
-				"linux"	"500"
+				"windows"	"502" // "496"
+				"linux"	"506" // "500"
 			}
-			"GetReactionDelay"
+			"GetReactionDelay" // done
 			{
-				"windows"	"497"
-				"linux"	"501"
+				"windows"	"503" // "497"
+				"linux"	"507" // "501"
 			}
-			"CanHolsterWeapon"
+			"CanHolsterWeapon" // done
 			{
-				"windows"	"498"
-				"linux"	"502"
+				"windows"	"504" // "498"
+				"linux"	"508" // "502"
 			}
-			"HolsterWeapon"
+			"HolsterWeapon" // done
 			{
-				"windows"	"499"
-				"linux"	"503"
+				"windows"	"505" // "499"
+				"linux"	"509" // "503"
 			}
-			"UnholsterWeapon"
+			"UnholsterWeapon" // done
 			{
-				"windows"	"500"
-				"linux"	"504"
+				"windows"	"506" // "500"
+				"linux"	"510" // "504"
 			}
-			"OnRangeAttack1"
+			"OnRangeAttack1" // done
 			{
-				"windows"	"501"
-				"linux"	"505"
+				"windows"	"507" // "501"
+				"linux"	"511" // "505"
 			}
-			"OnUpdateShotRegulator"
+			"OnUpdateShotRegulator" // done
 			{
-				"windows"	"502"
-				"linux"	"506"
+				"windows"	"508" // "502"
+				"linux"	"512" // "506"
 			}
-			"SquadSlotName"
+			"SquadSlotName" // done
 			{
-				"windows"	"504"
-				"linux"	"508"
+				"windows"	"510" // "504"
+				"linux"	"514" // "508"
 			}
-			"SetSquad"
+			"SetSquad" // done
 			{
-				"windows"	"505"
-				"linux"	"509"
+				"windows"	"511" // "505"
+				"linux"	"515" // "509"
 			}
-			"IsSilentSquadMember"
+			"IsSilentSquadMember" // done
 			{
-				"windows"	"506"
-				"linux"	"510"
+				"windows"	"512" // "506"
+				"linux"	"516" // "510"
 			}
-			"FindCoverPos_Entity"
+			"FindCoverPos_Entity" // done
 			{
-				"windows"	"507"
-				"linux"	"511"
+				"windows"	"513" // "507"
+				"linux"	"517" // "511"
 			}
-			"FindCoverPos_Sound"
+			"FindCoverPos_Sound" // done
 			{
-				"windows"	"509"
-				"linux"	"513"
+				"windows"	"515" // "509"
+				"linux"	"519" // "513"
 			}
-			"FindCoverPosInRadius"
+			"FindCoverPosInRadius" // done
 			{
-				"windows"	"508"
-				"linux"	"512"
+				"windows"	"514" // "508"
+				"linux"	"518" // "512"
 			}
-			"IsValidCover"
+			"IsValidCover" // done
 			{
-				"windows"	"510"
-				"linux"	"514"
+				"windows"	"516" // "510"
+				"linux"	"520" // "514"
 			}
-			"IsValidShootPosition"
+			"IsValidShootPosition" // done
 			{
-				"windows"	"511"
-				"linux"	"515"
+				"windows"	"517" // "511"
+				"linux"	"521" // "515"
 			}
-			"TestShootPosition"
+			"TestShootPosition" // done
 			{
-				"windows"	"512"
-				"linux"	"516"
+				"windows"	"518" // "512"
+				"linux"	"522" // "516"
 			}
-			"IsCoverPosition"
+			"IsCoverPosition" // done
 			{
-				"windows"	"513"
-				"linux"	"517"
+				"windows"	"519" // "513"
+				"linux"	"523" // "517"
 			}
-			"CoverRadius"
+			"CoverRadius" // done
 			{
-				"windows"	"514"
-				"linux"	"518"
+				"windows"	"520" // "514"
+				"linux"	"524" // "518"
 			}
-			"GetMaxTacticalLateralMovement"
+			"GetMaxTacticalLateralMovement" // done
 			{
-				"windows"	"515"
-				"linux"	"519"
+				"windows"	"521" // "515"
+				"linux"	"525" // "519"
 			}
-			"OnChangeHintGroup"
+			"OnChangeHintGroup" // done
 			{
-				"windows"	"516"
-				"linux"	"520"
+				"windows"	"522" // "516"
+				"linux"	"526" // "520"
 			}
-			"RangeAttack1Conditions"
+			"RangeAttack1Conditions" // done
 			{
-				"windows"	"518"
-				"linux"	"522"
+				"windows"	"524" // "518"
+				"linux"	"528" // "522"
 			}
-			"RangeAttack2Conditions"
+			"RangeAttack2Conditions" // done
 			{
-				"windows"	"519"
-				"linux"	"523"
+				"windows"	"525" // "519"
+				"linux"	"529" // "523"
 			}
-			"MeleeAttack1Conditions"
+			"MeleeAttack1Conditions" // done
 			{
-				"windows"	"520"
-				"linux"	"524"
+				"windows"	"526" // "520"
+				"linux"	"530" // "524"
 			}
-			"MeleeAttack2Conditions"
+			"MeleeAttack2Conditions" // done
 			{
-				"windows"	"521"
-				"linux"	"525"
+				"windows"	"527" // "521"
+				"linux"	"531" // "525"
 			}
-			"InnateRange1MinRange"
+			"InnateRange1MinRange" // done
 			{
-				"windows"	"522"
-				"linux"	"526"
+				"windows"	"528" // "522"
+				"linux"	"532" // "526"
 			}
-			"InnateRange1MaxRange"
+			"InnateRange1MaxRange" // done
 			{
-				"windows"	"523"
-				"linux"	"527"
+				"windows"	"529" // "523"
+				"linux"	"533" // "527"
 			}
-			"OnBeginMoveAndShoot"
+			"OnBeginMoveAndShoot" // done
 			{
-				"windows"	"524"
-				"linux"	"528"
+				"windows"	"530" // "524"
+				"linux"	"534" // "528"
 			}
-			"OnEndMoveAndShoot"
+			"OnEndMoveAndShoot" // done
 			{
-				"windows"	"524"
-				"linux"	"529"
+				"windows"	"531" // "524"
+				"linux"	"535" // "529"
 			}
-			"UseAttackSquadSlots"
+			"UseAttackSquadSlots" // done
 			{
-				"windows"	"526"
-				"linux"	"530"
+				"windows"	"532" // "526"
+				"linux"	"536" // "530"
 			}
-			"FindNamedEntity"
+			"FindNamedEntity" // done
 			{
-				"windows"	"527"
-				"linux"	"531"
+				"windows"	"533" // "527"
+				"linux"	"537" // "531"
 			}
-			"ClearAttackConditions"
+			"ClearAttackConditions" // done
 			{
-				"windows"	"528"
-				"linux"	"532"
+				"windows"	"534" // "528"
+				"linux"	"538" // "532"
 			}
-			"ShouldLookForBetterWeapon"
+			"ShouldLookForBetterWeapon" // done
 			{
-				"windows"	"529"
-				"linux"	"534"
+				"windows"	"535" // "529"
+				"linux"	"539" // "534"
 			}
-			"GiveWeapon"
+			"GiveWeapon" // done
 			{
-				"windows"	"530"
-				"linux"	"534"
+				"windows"	"536" // "530"
+				"linux"	"540" // "534"
 			}
-			"OnGivenWeapon"
+			"OnGivenWeapon" // done
 			{
-				"windows"	"531"
-				"linux"	"535"
+				"windows"	"537" // "531"
+				"linux"	"541" // "535"
 			}
-			"WeaponLOSCondition"
+			"WeaponLOSCondition" // done
 			{
-				"windows"	"532"
-				"linux"	"536"
+				"windows"	"538" // "532"
+				"linux"	"542" // "536"
 			}
-			"CurrentWeaponLOSCondition"
+			"CurrentWeaponLOSCondition" // done
 			{
-				"windows"	"533"
-				"linux"	"537"
+				"windows"	"539" // "533"
+				"linux"	"543" // "537"
 			}
-			"IsWaitingToRappel"
+			"IsWaitingToRappel" // done
 			{
-				"windows"	"534"
-				"linux"	"538"
+				"windows"	"540" // "534"
+				"linux"	"544" // "538"
 			}
-			"BeginRappel"
+			"BeginRappel" // done
 			{
-				"windows"	"535"
-				"linux"	"539"
+				"windows"	"541" // "535"
+				"linux"	"545" // "539"
 			}
-			"TranslateNavGoal"
+			"TranslateNavGoal" // done
 			{
-				"windows"	"536"
-				"linux"	"540"
+				"windows"	"542" // "536"
+				"linux"	"546" // "540"
 			}
-			"GetDefaultNavGoalTolerance"
+			"GetDefaultNavGoalTolerance" // done
 			{
-				"windows"	"537"
-				"linux"	"541"
+				"windows"	"543" // "537"
+				"linux"	"547" // "541"
 			}
-			"FCanCheckAttacks"
+			"FCanCheckAttacks" // done
 			{
-				"windows"	"538"
-				"linux"	"542"
+				"windows"	"544" // "538"
+				"linux"	"548" // "542"
 			}
-			"CheckAmmo"
+			"CheckAmmo" // done
 			{
-				"windows"	"539"
-				"linux"	"543"
+				"windows"	"545" // "539"
+				"linux"	"549" // "543"
 			}
-			"FValidateHintType"
+			"FValidateHintType" // done
 			{
-				"windows"	"540"
-				"linux"	"544"
+				"windows"	"546" // "540"
+				"linux"	"550" // "544"
 			}
-			"GetHintActivity"
+			"GetHintActivity" // done
 			{
-				"windows"	"541"
-				"linux"	"545"
+				"windows"	"547" // "541"
+				"linux"	"551" // "545"
 			}
-			"GetHintDelay"
+			"GetHintDelay" // done
 			{
-				"windows"	"542"
-				"linux"	"546"
+				"windows"	"548" // "542"
+				"linux"	"552" // "546"
 			}
-			"GetCoverActivity"
+			"GetCoverActivity" // done
 			{
-				"windows"	"543"
-				"linux"	"547"
+				"windows"	"549" // "543"
+				"linux"	"553" // "547"
 			}
-			"SetTurnActivity"
+			"SetTurnActivity" // done
 			{
-				"windows"	"545"
-				"linux"	"549"
+				"windows"	"551" // "545"
+				"linux"	"555" // "549"
 			}
-			"GetHitgroupDamageMultiplier"
+			"GetHitgroupDamageMultiplier" // done
 			{
-				"windows"	"546"
-				"linux"	"550"
+				"windows"	"552" // "546"
+				"linux"	"556" // "550"
 			}
-			"PlayerInSpread"
+			"PlayerInSpread" // done
 			{
-				"windows"	"547"
-				"linux"	"551"
+				"windows"	"553" // "547"
+				"linux"	"557" // "551"
 			}
-			"InnateWeaponLOSCondition"
+			"InnateWeaponLOSCondition" // done
 			{
-				"windows"	"548"
-				"linux"	"552"
+				"windows"	"554" // "548"
+				"linux"	"558" // "552"
 			}
-			"GetFlinchActivity"
+			"GetFlinchActivity" // done
 			{
-				"windows"	"549"
-				"linux"	"553"
+				"windows"	"555" // "549"
+				"linux"	"559" // "553"
 			}
-			"GetShootEnemyDir"
+			"GetShootEnemyDir" // done
 			{
-				"windows"	"550"
-				"linux"	"554"
+				"windows"	"556" // "550"
+				"linux"	"560" // "554"
 			}
-			"CollectShotStats"
+			"CollectShotStats" // done
 			{
-				"windows"	"551"
-				"linux"	"555"
+				"windows"	"557" // "551"
+				"linux"	"561" // "555"
 			}
-			"ShouldMoveAndShoot"
+			"ShouldMoveAndShoot" // done
 			{
-				"windows"	"552"
-				"linux"	"556"
+				"windows"	"558" // "552"
+				"linux"	"562" // "556"
 			}
-			"IsLightDamage"
+			"IsLightDamage" // done
 			{
-				"windows"	"553"
-				"linux"	"557"
+				"windows"	"559" // "553"
+				"linux"	"563" // "557"
 			}
-			"IsHeavyDamage"
+			"IsHeavyDamage" // done
 			{
-				"windows"	"554"
-				"linux"	"558"
+				"windows"	"560" // "554"
+				"linux"	"564" // "558"
 			}
-			"PickupWeapon"
+			"PickupWeapon" // done
 			{
-				"windows"	"555"
-				"linux"	"559"
+				"windows"	"561" // "555"
+				"linux"	"565" // "559"
 			}
-			"PickupItem"
+			"PickupItem" // done
 			{
-				"windows"	"556"
-				"linux"	"560"
+				"windows"	"562" // "556"
+				"linux"	"566" // "560"
 			}
-			"NotifyDeadFriend"
+			"NotifyDeadFriend" // done
 			{
-				"windows"	"557"
-				"linux"	"561"
+				"windows"	"563" // "557"
+				"linux"	"567" // "561"
 			}
-			"IsValidReasonableFacing"
+			"IsValidReasonableFacing" // done
 			{
-				"windows"	"559"
-				"linux"	"563"
+				"windows"	"565" // "559"
+				"linux"	"569" // "563"
 			}
-			"GetReasonableFacingDist"
+			"GetReasonableFacingDist" // done
 			{
-				"windows"	"560"
-				"linux"	"564"
+				"windows"	"566" // "560"
+				"linux"	"570" // "564"
 			}
-			"GetClassScheduleIdSpace"
+			"GetClassScheduleIdSpace" // done
 			{
-				"windows"	"561"
-				"linux"	"565"
+				"windows"	"567" // "561"
+				"linux"	"571" // "565"
 			}
-			"GetSquadSlotDebugName"
+			"GetSquadSlotDebugName" // done
 			{
-				"windows"	"562"
-				"linux"	"566"
+				"windows"	"568" // "562"
+				"linux"	"572" // "566"
 			}
-			"IsCrouching"
+			"IsCrouching" // done
 			{
-				"windows"	"563"
-				"linux"	"567"
+				"windows"	"569" // "563"
+				"linux"	"573" // "567"
 			}
-			"Crouch"
+			"Crouch" // done
 			{
-				"windows"	"564"
-				"linux"	"568"
+				"windows"	"570" // "564"
+				"linux"	"574" // "568"
 			}
-			"Stand"
+			"Stand" // done
 			{
-				"windows"	"565"
-				"linux"	"569"
+				"windows"	"571" // "565"
+				"linux"	"575" // "569"
 			}
-			"DesireCrouch"
+			"DesireCrouch" // done
 			{
-				"windows"	"566"
-				"linux"	"570"
+				"windows"	"572" // "566"
+				"linux"	"576" // "570"
 			}
-			"IsCrouchedActivity"
+			"IsCrouchedActivity" // done
 			{
-				"windows"	"567"
-				"linux"	"571"
+				"windows"	"573" // "567"
+				"linux"	"577" // "571"
 			}
-			"ShouldProbeCollideAgainstEntity"
+			"ShouldProbeCollideAgainstEntity" // done
 			{
-				"windows"	"572"
-				"linux"	"576"
+				"windows"	"578" // "572"
+				"linux"	"582"
 			}
-			"CalcYawSpeed"
+			"CalcYawSpeed" // done
 			{
 				"windows"	"0"
-				"linux"	"474"
+				"linux"	"480" // "474"
 			}
-			"OnCalcBaseMove"
+			"OnCalcBaseMove" // done
 			{
 				"windows"	"1"
-				"linux"	"475"
+				"linux"	"481" // "475"
 			}
-			"OnObstructionPreSteer"
+			"OnObstructionPreSteer" // done
 			{
 				"windows"	"2"
-				"linux"	"476"
+				"linux"	"482" // "476"
 			}
-			"OnFailedSteer"
+			"OnFailedSteer" // !!!
 			{
 				"windows"	"3"
 				"linux"	"3"
 			}
-			"OnFailedLocalNavigation"
+			"OnFailedLocalNavigation" // !!!
 			{
 				"windows"	"4"
 				"linux"	"4"
 			}
-			"OnInsufficientStopDist"
+			"OnInsufficientStopDist" // !!!
 			{
 				"windows"	"5"
 				"linux"	"5"
 			}
-			"OnMoveBlocked"
+			"OnMoveBlocked" // !!!
 			{
 				"windows"	"6"
-				"linux"	"611"
+				"linux"	"617" // "611"
 			}
-			"OnMoveExecuteFailed"
+			"OnMoveExecuteFailed" // !!!
 			{
 				"windows"	"8"
 				"linux"	"8"
 			}
 			
 			/* CBaseFlex */
-			"SetViewtarget"
+			"SetViewtarget" // done
 			{
-				"windows"	"216"
-				"linux"	"217"
+				"windows"	"222" // "216"
+				"linux"	"223" // "217"
 			}
-			"StartSceneEvent"
+			"StartSceneEvent" // done
 			{
-				"windows"	"217"
-				"linux"	"218"
+				"windows"	"223" // "217"
+				"linux"	"224" // "218"
 			}
-			"ProcessSceneEvents"
+			"ProcessSceneEvents" // done
 			{
-				"windows"	"218"
-				"linux"	"219"
+				"windows"	"224" // "218"
+				"linux"	"225" // "219"
 			}
-			"ProcessSceneEvent"
+			"ProcessSceneEvent" // done
 			{
-				"windows"	"219"
-				"linux"	"220"
+				"windows"	"225" // "219"
+				"linux"	"226" // "220"
 			}
-			"ClearSceneEvent"
+			"ClearSceneEvent" // done
 			{
-				"windows"	"220"
-				"linux"	"221"
+				"windows"	"226" // "220"
+				"linux"	"227" // "221"
 			}
-			"CheckSceneEventCompletion"
+			"CheckSceneEventCompletion" // done
 			{
-				"windows"	"221"
-				"linux"	"222"
+				"windows"	"227" // "221"
+				"linux"	"228" // "222"
 			}
-			"PlayScene"
+			"PlayScene" // done
 			{
-				"windows"	"222"
-				"linux"	"223"
+				"windows"	"228" // "222"
+				"linux"	"229" // "223"
 			}
-			"PlayAutoGeneratedSoundScene"
+			"PlayAutoGeneratedSoundScene" // done
 			{
-				"windows"	"223"
-				"linux"	"224"
+				"windows"	"229" // "223"
+				"linux"	"230" // "224"
 			}
 			/* End CBaseFlex */
 			
 			
 			
 			/* CBasePropDoor */
-			"GetOpenInterval"
+			"GetOpenInterval" // done
 			{
-				"windows"	"223"
-				"linux"	"261"
+				"windows"	"229" // "223"
+				"linux"	"267" // "261"
 			}
 			
 			
 			
 			/* CBaseCombatWeapon */
-			"Equip"
+			"Equip" // done
 			{
-				"windows"	"219"
-				"linux"	"220"
+				"windows"	"225" // "219"
+				"linux"	"226" // "220"
 			}
-			"Drop"
+			"Drop" // done
 			{
-				"windows"	"220"
-				"linux"	"221"
+				"windows"	"226" // "220"
+				"linux"	"227" // "221"
 			}
-			"SendWeaponAnim"
+			"SendWeaponAnim" // done
 			{
-				"windows"	"236"
-				"linux"	"237"
+				"windows"	"242" // "236"
+				"linux"	"243" // "237"
 			}
-			"HasAnyAmmo"
+			"HasAnyAmmo" // done
 			{
-				"windows"	"242"
-				"linux"	"243"
+				"windows"	"248" // "242"
+				"linux"	"249" // "243"
 			}
-			"HasPrimaryAmmo"
+			"HasPrimaryAmmo" // done
 			{
-				"windows"	"243"
-				"linux"	"244"
+				"windows"	"249" // "243"
+				"linux"	"250" // "244"
 			}
-			"HasSecondaryAmmo"
+			"HasSecondaryAmmo" // done
 			{
-				"windows"	"244"
-				"linux"	"245"
+				"windows"	"250" // "244"
+				"linux"	"251" // "245"
 			}
-			"CanHolster"
+			"CanHolster" // done
 			{
-				"windows"	"245"
-				"linux"	"246"
+				"windows"	"251" // "245"
+				"linux"	"252" // "246"
 			}
-			"Deploy"
+			"Deploy" // done
 			{
-				"windows"	"248"
-				"linux"	"249"
+				"windows"	"254" // "248"
+				"linux"	"255" // "249"
 			}
-			"Holster"
+			"Holster" // done
 			{
-				"windows"	"249"
-				"linux"	"250"
+				"windows"	"255" // "249"
+				"linux"	"256" // "250"
 			}
-			"ItemPreFrame"
+			"ItemPreFrame" // done
 			{
-				"windows"	"258"
-				"linux"	"259"
+				"windows"	"264" // "258"
+				"linux"	"265" // "259"
 			}
-			"ItemPostFrame"
+			"ItemPostFrame" // done
 			{
-				"windows"	"259"
-				"linux"	"260"
+				"windows"	"265" // "259"
+				"linux"	"266" // "260"
 			}
-			"WeaponIdle"
+			"WeaponIdle" // done
 			{
-				"windows"	"262"
-				"linux"	"263"
+				"windows"	"268" // "262"
+				"linux"	"269" // "263"
 			}
-			"HandleFireOnEmpty"
+			"HandleFireOnEmpty" // done
 			{
-				"windows"   "263"
-				"linux"	"264"
+				"windows"   "269" // "263"
+				"linux"	"270" // "264"
 			}
-			"CanPerformSecondaryAttack"
+			"CanPerformSecondaryAttack" // done
 			{
-				"windows"   "264"
-				"linux"	"265"
+				"windows"   "270" // "264"
+				"linux"	"271" // "265"
 			}
-			"ShouldBlockPrimaryFire"
+			"ShouldBlockPrimaryFire" // done
 			{
-				"windows"   "265"
-				"linux"	"266"
+				"windows"   "271" // "265"
+				"linux"	"272" // "266"
 			}
-			"IsWeaponZoomed"
+			"IsWeaponZoomed" // done
 			{
-				"windows"   "266"
-				"linux"	"267"
+				"windows"   "272" // "266"
+				"linux"	"273" // "267"
 			}
-			"Reload"
+			"Reload" // done
 			{
-				"windows"   "270"
-				"linux"	"271"
+				"windows"   "276" // "270"
+				"linux"	"277" // "271"
 			}
-			"PrimaryAttack"
+			"PrimaryAttack" // done
 			{
-				"windows"	"273"
-				"linux"	"274"
+				"windows"	"279" // "273"
+				"linux"	"280" // "274"
 			}
-			"SecondaryAttack"
+			"SecondaryAttack" // done
 			{
-				"windows"	"274"
-				"linux"	"275"
+				"windows"	"280" // "274"
+				"linux"	"281" // "275"
 			}
-			"GetPrimaryAttackActivity"
+			"GetPrimaryAttackActivity" // done
 			{
-				"windows"	"275"
-				"linux"	"276"
+				"windows"	"281" // "275"
+				"linux"	"282" // "276"
 			}
-			"GetSecondaryAttackActivity"
+			"GetSecondaryAttackActivity" // done
 			{
-				"windows"	"276"
-				"linux"	"277"
+				"windows"	"282" // "276"
+				"linux"	"283" // "277"
 			}
-			"GetBulletType"
+			"GetBulletType" // !!!
 			{
-				"windows"	"279"
-				"linux"	"280"
+				"windows"	"287" // "279"
+				"linux"	"287" // "280"
 			}
-			"GetBulletSpread"
+			"GetBulletSpread" // done
 			{
-				"windows"	"281"
-				"linux"	"281"
+				"windows"	"287" // "281"
+				"linux"	"287" // "281"
 			}
-			"GetFireRate"
+			"GetFireRate" // done
 			{
-				"windows"	"283"
-				"linux"	"284"
+				"windows"	"289" // "283"
+				"linux"	"290" // "284"
 			}
-			"GetMinBurst"
+			"GetMinBurst" // done
 			{
-				"windows"	"284"
-				"linux"	"285"
+				"windows"	"290" // "284"
+				"linux"	"291" // "285"
 			}
-			"GetMaxBurst"
+			"GetMaxBurst" // done
 			{
-				"windows"	"285"
-				"linux"	"286"
+				"windows"	"291" // "285"
+				"linux"	"292" // "286"
 			}
-			"GetMinRestTime"
+			"GetMinRestTime" // done
 			{
-				"windows"	"286"
-				"linux"	"287"
+				"windows"	"292" // "286"
+				"linux"	"293" // "287"
 			}
-			"GetMaxRestTime"
+			"GetMaxRestTime" // done
 			{
-				"windows"	"287"
-				"linux"	"288"
+				"windows"	"293" // "287"
+				"linux"	"294" // "288"
 			}
-			"GetRandomBurst"
+			"GetRandomBurst" // done
 			{
-				"windows"	"288"
-				"linux"	"289"
+				"windows"	"294" // "288"
+				"linux"	"295" // "289"
 			}
-			"WeaponSound"
+			"WeaponSound" // done
 			{
-				"windows"	"289"
-				"linux"	"290"
+				"windows"	"295" // "289"
+				"linux"	"296" // "290"
 			}
-			"AddViewKick"
+			"AddViewKick" // done
 			{
-				"windows"	"298"
-				"linux"	"299"
+				"windows"	"304" // "298"
+				"linux"	"305" // "299"
 			}
-			"GetProficiencyValues"
+			"GetProficiencyValues" // done
 			{
-				"windows"	"291"
-				"linux"	"292"
+				"windows"	"297" // "291"
+				"linux"	"298" // "292"
 			}
-			"Weapon_SetActivity" //CBaseCombatWeapon::SetActivity
+			"Weapon_SetActivity" //CBaseCombatWeapon::SetActivity // done
 			{
-				"windows"	"297"
-				"linux"	"298"
+				"windows"	"303" // "297"
+				"linux"	"304" // "298"
 			}
-			"CanBePickedUpByNPCs"
+			"CanBePickedUpByNPCs" // done
 			{
-				"windows"	"306"
-				"linux"	"307"
+				"windows"	"312" // "306"
+				"linux"	"313" // "307"
 			}
-			"GetViewModel"
+			"GetViewModel" // done
 			{
-				"windows"	"308"
-				"linux"	"309"
+				"windows"	"314" // "308"
+				"linux"	"315" // "309"
 			}
-			"GetWorldModel"
+			"GetWorldModel" // done
 			{
-				"windows"	"309"
-				"linux"	"310"
+				"windows"	"315" // "309"
+				"linux"	"316" // "310"
 			}
-			"GetMaxClip1"
+			"GetMaxClip1" // done
 			{
-				"windows"	"311"
-				"linux"	"312"
+				"windows"	"317" // "311"
+				"linux"	"318" // "312"
 			}
-			"GetMaxClip2"
+			"GetMaxClip2" // done
 			{
-				"windows"	"312"
-				"linux"	"313"
+				"windows"	"318" // "312"
+				"linux"	"319" // "313"
 			}
-			"GetSlot"
+			"GetSlot" // done
 			{
-				"windows"	"320"
-				"linux"	"321"
+				"windows"	"326" // "320"
+				"linux"	"327" // "321"
 			}
-			"UsesClipsForAmmo1"
+			"UsesClipsForAmmo1" // done
 			{
-				"windows"	"326"
-				"linux"	"327"
+				"windows"	"332" // "326"
+				"linux"	"333" // "327"
 			}
-			"UsesClipsForAmmo2"
+			"UsesClipsForAmmo2" // done
 			{
-				"windows"	"327"
-				"linux"	"328"
+				"windows"	"333" // "327"
+				"linux"	"334" // "328"
 			}
-			"ActivityOverride"
+			"ActivityOverride" // done
 			{
-				"windows"	"341"
-				"linux"	"342"
+				"windows"	"347" // "341"
+				"linux"	"348" // "342"
 			}
-			"ActivityList"
+			"ActivityList" // done
 			{
-				"windows"	"342"
-				"linux"	"343"
+				"windows"	"348" // "342"
+				"linux"	"349" // "343"
 			}
 			//"ActivityListCount" //inlined
 			//{
 			//	"windows"	"341"
 			//}
-			"Weapon_CapabilitiesGet" //CBaseCombatWeapon::CapabilitiesGet
+			"Weapon_CapabilitiesGet" //CBaseCombatWeapon::CapabilitiesGet // done
 			{
-				"windows"	"352"
-				"linux"	"353"
+				"windows"	"356" //"352"
+				"linux"	"357" // "353"
 			}
-			"WeaponRangeAttack1Condition"
+			"WeaponRangeAttack1Condition" // done
 			{
-				"windows"	"354"
-				"linux"	"355"
+				"windows"	"358" // "354"
+				"linux"	"359" // "355"
 			}
-			"WeaponRangeAttack2Condition"
+			"WeaponRangeAttack2Condition" // !!!
 			{
-				"windows"	"355"
-				"linux"	"356"
+				"windows"	"359" // "355"
+				"linux"	"360" // "356"
 			}
-			"WeaponMeleeAttack1Condition"
+			"WeaponMeleeAttack1Condition" // done
 			{
-				"windows"	"356"
-				"linux"	"357"
+				"windows"	"360" // "356"
+				"linux"	"361" // "357"
 			}
-			"WeaponMeleeAttack2Condition"
+			"WeaponMeleeAttack2Condition" // done
 			{
-				"windows"	"357"
-				"linux"	"358"
+				"windows"	"361" // "357"
+				"linux"	"362" // "358"
 			}
-			"Operator_HandleAnimEvent"
+			"Operator_HandleAnimEvent" // done
 			{
-				"windows"	"359"
-				"linux"	"360"
+				"windows"	"363" // "359"
+				"linux"	"364" // "360"
 			}
-			"Operator_ForceNPCFire"
+			"Operator_ForceNPCFire" // done
 			{
-				"windows"	"360"
-				"linux"	"361"
+				"windows"	"364" // "360"
+				"linux"	"365" // "361"
 			}
-			"m_Activity" // CBaseCombatWeapon::SetIdealActivity
+			"m_Activity" // CBaseCombatWeapon::SetIdealActivity // !!! done
 			{
 				// TODO: "windows"
-				"linux"	"1180"
+				"linux"	"1240" // "1180"
 			}
 			/* End CBaseCombatWeapon */
 
 			/* CAI_GoalEntity */
-			"InputActivate"
+			"InputActivate" // done
 			{
-				"windows"	"188"
-				"linux"	"189"
+				"windows"	"194" // "188"
+				"linux"	"195" // "189"
 			}
-			"InputUpdateActors"
+			"InputUpdateActors" // done
 			{
-				"windows"	"189"
-				"linux"	"190"
+				"windows"	"195" // "189"
+				"linux"	"196" // "190"
 			}
-			"InputDeactivate"
+			"InputDeactivate" // done
 			{
-				"windows"	"190"
-				"linux"	"191"
+				"windows"	"196" // "190"
+				"linux"	"197" // "191"
 			}
-			"EnableGoal"
+			"EnableGoal" // done
 			{
-				"windows"	"191"
-				"linux"	"194"
+				"windows"	"197" // "191"
+				"linux"	"200" // "194"
 			}
-			"DisableGoal"
+			"DisableGoal" // done
 			{
-				"windows"	"192"
-				"linux"	"195"
+				"windows"	"198" // "192"
+				"linux"	"201" // "195"
 			}
 
 			/* CBaseGrenadeWeapon */
-			"EmitGrenade"
+			"EmitGrenade" // done
 			{
-				"windows" "388"
-				"linux" "389"
+				"windows" "394" // "388"
+				"linux" "395" // "389"
 			}
 			
 			/* CRotorWashShooter */
-			"DoWashPush"
+			"DoWashPush" // done
 			{
 				"windows"	"0" // TODO
-				"linux"	"190"
+				"linux"	"196" // "190"
 			}
 
 
 			
 			/* CBaseFilter */
-			"PassesFilterImpl"
+			"PassesFilterImpl" // done
 			{
-				"windows"	"188"
-				"linux"	"189"
+				"windows"	"194" // "188"
+				"linux"	"195" // "189"
 			}
 
 
 
 			/* CBaseProp */
-			"OverridePropdata"
+			"OverridePropdata" // done
 			{
-				"windows"	"216"
-				"linux"	"217"
+				"windows"	"222" // "216"
+				"linux"	"223" // "217"
 			}
 
 
 
 
 			/* CPropVehicleDriveable */
-			"DriveVehicle"
+			"DriveVehicle" // done
 			{
-				"windows"	"222"
-				"linux"	"224"
+				"windows"	"228" // "222"
+				"linux"	"230" // "224"
 			}
-			"DampenEyePosition"
+			"DampenEyePosition" // done
 			{
-				"windows"	"217"
-				"linux"	"219"
+				"windows"	"223" // "217"
+				"linux"	"225" // "219"
 			}
-			"CreateServerVehicle"
+			"CreateServerVehicle" // done
 			{
-				"windows"	"220"
-				"linux"	"222"
+				"windows"	"226" // "220"
+				"linux"	"228" // "222"
 			}
-			"IsOverturned"
+			"IsOverturned" // done
 			{
-				"windows"	"223"
-				"linux"	"225"
+				"windows"	"229" // "223"
+				"linux"	"231" // "225"
 			}
-			"IsVehicleBodyInWater"
+			"IsVehicleBodyInWater" // done
 			{
-				"windows"	"224"
-				"linux"	"226"
+				"windows"	"230" // "224"
+				"linux"	"232" // "226"
 			}
 			/* CPropVehicleDriveable / IPropVehicleDriveable */
-			"GetDriver"
+			"GetDriver" // done
 			{
 				//"windows"	"0"
-				"linux"	"227"
+				"linux"	"233" // "227"
 			}
-			"SetupMove"
+			"SetupMove" // done
 			{
 				//"windows"	"2"
-				"linux"	"229"
+				"linux"	"235" // "229"
 			}
-			"ProcessMovement"
+			"ProcessMovement" // done
 			{
-				"windows"	"3"
-				"linux"	"3"
+				// "windows"	"3"
+				"linux"	"236" // "3"
 			}
-			"CanEnterVehicle"
+			"CanEnterVehicle" // done
 			{
-				"windows"	"5"
-				"linux"	"5"
+				// "windows"	"5"
+				"linux"	"238" // "5"
 			}
-			"CanExitVehicle"
+			"CanExitVehicle" // done
 			{
-				"windows"	"6"
-				"linux"	"6"
+				// "windows"	"6"
+				"linux"	"239" // "6"
 			}
-			"EnterVehicle"
+			"EnterVehicle" // done
 			{
-				"windows"	"9"
-				"linux"	"9"
+				// "windows"	"9"
+				"linux"	"242" // "9"
 			}
-			"ExitVehicle"
+			"ExitVehicle" // done
 			{
-				"windows"	"11"
-				"linux"	"11"
+				// "windows"	"11"
+				"linux"	"246" // "11"
 			}
-			"AllowBlockedExit"
+			"AllowBlockedExit" // done
 			{
-				"windows"	"12"
-				"linux"	"12"
+				// "windows"	"12"
+				"linux"	"243" // "12"
 			}
-			"PassengerShouldReceiveDamage"
+			"PassengerShouldReceiveDamage" // done
 			{
-				"windows"	"15"
-				"linux"	"15"
+				// "windows"	"15"
+				"linux"	"248" // "15"
 			}
 
 			/* CRagdollProp */
-			"SetDamageEntity"
+			"SetDamageEntity" // done
 			{
-				"windows"   "216"
-				"linux"	"217"
+				"windows"   "222" // "216"
+				"linux"	"223" // "217"
 			}
-			"m_ragdoll"
+			"m_ragdoll" // !!! done
 			{
 				//TODO: "windows"   "216"
-				"linux"	"1148"
+				"linux"	"1208" // "1148"
 			}
 
 			/* IDrivableVehicle */
 
 			/* Variables Offset! */
-			"m_nTargetNodeID" // "Node is visible to player"
+			"m_nTargetNodeID" // "Node is visible to player" // done
 			{
-				"windows"	"884"
-				"linux"	"904"
+				// "windows"	"884"
+				"linux"	"964" // "904"
 			}
-			"m_pNetwork" // "****** MAP CONTAINS DUPLICATE HAMMER NODE IDS! CHECK FOR PROBLEM", 8B 80 ? ? ? ? 3B 58 04 0F 8C ? ? ? ? F6 45 D9 01 
+			"m_pNetwork" // "****** MAP CONTAINS DUPLICATE HAMMER NODE IDS! CHECK FOR PROBLEM", 8B 80 ? ? ? ? 3B 58 04 0F 8C ? ? ? ? F6 45 D9 01 // done
 			{
-				"windows"	"836"
-				"linux"	"856"
+				// "windows"	"836"
+				"linux"	"912" // "856"
 			}
-			
+
 
 			/* CBaseEntity */
-			"m_pLink"	// 51 53 8B ? ? ? 55 8B ? ? ? 56 57 33 
+			"m_pLink"	// 51 53 8B ? ? ? 55 8B ? ? ? 56 57 33  // done
 			{
 				// sig doesn't work anymore.. but what you can try doing is find baseentity::m_target and subtract it by 4
 				"windows"	"216"
@@ -2758,22 +2758,22 @@
 
 			
 			/* CBaseFlex */
-			"m_LocalToGlobal"	// Unable to find mapping for flexcontroller %i, settings %p on %i/
+			"m_LocalToGlobal"	// Unable to find mapping for flexcontroller %i, settings %p on %i/ // done
 			{
-				"windows"	"1564"
-				"linux"	"1584"
+				// "windows"	"1564"
+				"linux"	"1644" // "1584"
 			}
 
 			/* CSceneEntity */
-			"m_pRecipientFilter"	// "snd_mixahead", 8B 8F ? ? ? ? 89 45 08 85 C9 74 6D 
+			"m_pRecipientFilter"	// "snd_mixahead", 8B 8F ? ? ? ? 89 45 08 85 C9 74 6D // done
 			{
-				"windows"	"1548"
-				"linux"	"1568"
+				// "windows"	"1548"
+				"linux"	"1628" // "1568"
 			}
-			"m_pScene" // 83 BE ? ? ? ? ? 0F 84 ? ? ? ? 8B 86 ? ? ? ? BA ? ? ? ? D9 86 ? ? ? ? 85 C0 - first cmp
+			"m_pScene" // 83 BE ? ? ? ? ? 0F 84 ? ? ? ? 8B 86 ? ? ? ? BA ? ? ? ? D9 86 ? ? ? ? 85 C0 - first cmp // done
 			{
-				"windows"	"1004"
-				"linux"	"1024"
+				// "windows"	"1004"
+				"linux"	"1084" // "1024"
 			}
 
 
@@ -2781,67 +2781,67 @@
 
 			/* BaseNPC */
 			// all of this should be sig scanned..
-			"m_Conditions"
+			"m_Conditions" // done
 			{
 				//8D 8E ? ? ? ? 85 C9 74 19, +2
-				"windows"	"2160"
-				"linux"	"2180"
+				// "windows"	"2160"
+				"linux"	"2240" // "2180"
 			}
-			"m_pSchedule"	// "Schedule cleared: %s\"
+			"m_pSchedule"	// "Schedule cleared: %s\" // done
 			{
 				// its should be the 3rd assignment below the =256 one.
 				// alternatively, you can look into CAI_BaseNPC::SetSchedule
-				"windows"	"2092"
-				"linux"	"2112"
+				// "windows"	"2092"
+				"linux"	"2172" // "2112"
 			}
-			"m_pSquad" // above "*Squad Leader**"
+			"m_pSquad" // above "*Squad Leader**" // done
 			{
-				"windows"	"2748"
-				"linux"	"2768"
+				// "windows"	"2748"
+				"linux"	"2828" // "2768"
 			}
-			"m_CustomInterruptConditions" // inside CAI_BaseNPC::ClearCustomInterruptCondition
+			"m_CustomInterruptConditions" // inside CAI_BaseNPC::ClearCustomInterruptCondition // done ?
 			{
-				"windows"	"2192" //2244
-				"linux"	"2260"
+				// "windows"	"2192" //2244
+				"linux"	"2320" // "2260"
 			}
-			"m_poseMove_Yaw" // move_yaw
+			"m_poseMove_Yaw" // move_yaw // done ?
 			{
-				"windows"	"2156"
-				"linux"	"2176"
+				// "windows"	"2156"
+				"linux"	"2236" // "2176"
 			}
-			"m_InverseIgnoreConditions" // 81 C6 ? ? ? ? 74 37 C7 06
+			"m_InverseIgnoreConditions" // 81 C6 ? ? ? ? 74 37 C7 06 // done ?
 			{
-				"windows"	"2256"
-				"linux"	"2276"
+				// "windows"	"2256"
+				"linux"	"2336" // "2276"
 			}
-			"m_poseAim_Pitch" // aim_pitch (or - 2*sizeof(int) from m_poseMove_Yaw)
+			"m_poseAim_Pitch" // aim_pitch (or - 2*sizeof(int) from m_poseMove_Yaw) // done ?
 			{
-				"windows"	"2148"
-				"linux"	"2168"
+				// "windows"	"2148"
+				"linux"	"2228" // "2168"
 			}
-			"m_poseAim_Yaw" // aim_yaw
+			"m_poseAim_Yaw" // aim_yaw // done ?
 			{
-				"windows"	"2152"
-				"linux"	"2172"
+				// "windows"	"2152"
+				"linux"	"2232" // "2172"
 			}
-			"m_ConditionsPreIgnore" // 85 84 B7 ? ? ? ? 5F 0F 95 C0 5E  (not 100% sure)
+			"m_ConditionsPreIgnore" // 85 84 B7 ? ? ? ? 5F 0F 95 C0 5E  (not 100% sure) // done ?
 			{
-				"windows"	"2160"//"2220"
-				"linux"	"2320"
+				// "windows"	"2160"//"2220"
+				"linux"	"2380" // "2320"
 			}
-			"m_bInChoreo" // not used
+			"m_bInChoreo" // not used // done ?
 			{
 				// TODO: "windows"	"2092"
-				"linux"	"2320"
+				"linux"	"2380" // "2320"
 			}
 
 
 
 			/* CSkyCamera */
-			"m_skyboxData"
+			"m_skyboxData" // done ?
 			{
-				"windows"	"828"
-				"linux"	"868"
+				// "windows"	"828"
+				"linux"	"928" // "868"
 			}
 
 
@@ -2856,46 +2856,46 @@
 
 
 			/* CGib */
-			"m_lifeTime"
+			"m_lifeTime" // done ?
 			{
-				"windows"	"1136"
-				"linux"	"1156"
+				// "windows"	"1136"
+				"linux"	"1216" // "1156"
 			}
-			"m_bForceRemove"
+			"m_bForceRemove" // done
 			{
-				"windows"	"1140"
-				"linux"	"1160"
+				// "windows"	"1140"
+				"linux"	"1220" // "1160"
 			}
-			"m_material"
+			"m_material" // done ?
 			{
-				"windows"	"1132"
-				"linux"	"1152"
+				// "windows"	"1132"
+				"linux"	"1212" // "1152"
 			}
-			"m_cBloodDecals"
+			"m_cBloodDecals" // done ?
 			{
-				"windows"	"1128"
-				"linux"	"1148"
+				// "windows"	"1128"
+				"linux"	"1208" // "1148"
 			}
-			"m_bloodColor"
+			"m_bloodColor" // done ?
 			{
-				"windows"	"1152"
-				"linux"	"1172"
+				// "windows"	"1152"
+				"linux"	"1232" // "1172"
 			}
 
 
 			/* CBasePlayer */
-			"m_iVehicleAnalogBias" // below mov [blah+XXX], 0 below "PlayerEnteredVehicle"
+			"m_iVehicleAnalogBias" // below mov [blah+XXX], 0 below "PlayerEnteredVehicle" // done ?
 			{
 				// TODO: "windows"	""
-				"linux"	"2772"
+				"linux"	"2832" // "2772"
 			}
 			
 			/* CCollisionProperty */
 			
-			"m_flRadius"	// CCollisionProperty::m_flRadius
+			"m_flRadius"	// CCollisionProperty::m_flRadius // done ?
 			{
-				"windows"	 "404" // plain offset is "56" but i think we've to add |this|offs of CCollisionProperty
-				"linux" "366"
+				// "windows"	 "404" // plain offset is "56" but i think we've to add |this|offs of CCollisionProperty
+				"linux" "426" // "366"
 			}
 			
 			// I BELIVE THE STUFF BELOW IS NOT REQUIRED
@@ -2911,10 +2911,10 @@
 
 
 			/* CPathTrack */
-			"m_nIterVal"
+			"m_nIterVal" // done
 			{
 				// TODO: "windows"	"800"
-				"linux"	"872"
+				"linux"	"932" // "872"
 			}
 
 
@@ -3090,25 +3090,25 @@
 			//}
 			
 			// DECLARE_DATAMAP not working?
-			"m_fMinRange1"
+			"m_fMinRange1" // done ?
 			{
-				"windows"   "1212"
-				"linux"   "1232"
+				// "windows"   "1212"
+				"linux"   "1292" // "1232"
 			}
-			"m_fMinRange2"
+			"m_fMinRange2" // done ?
 			{
-				"windows"   "1216"
-				"linux"   "1236"
+				// "windows"   "1216"
+				"linux"   "1296" // "1236"
 			}
-			"m_fMaxRange1"
+			"m_fMaxRange1" // done ?
 			{
-				"windows"   "1220"
-				"linux"   "1240"
+				// "windows"   "1220"
+				"linux"   "1300" // "1240"
 			}
-			"m_fMaxRange2"
+			"m_fMaxRange2" // done ?
 			{
-				"windows"   "1224"
-				"linux"   "1244"
+				// "windows"   "1224"
+				"linux"   "1304" // "1244"
 			}
 		}
 	}
@@ -3431,16 +3431,16 @@
 				"windows"	"\x55\x8B\xEC\xB8\x10\x18\x00\x00"
 				"linux"	 "@_ZN14CBaseAnimating12GetBoneCacheEv"
 			}
-			"RemoveDeferred"
+			"RemoveDeferred" // done
 			{
 				"library"	"server"
-				"windows"	"\xD9\xEE\x56\x6A\x00\x51\xD9\x1C\x24\x68\x2A\x2A\x2A\x2A\x8B\xF1\xE8\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x6A\x00\x51\x8B\xCE\xF3\x0F\x10\x40\x2A\xF3\x0F\x58\x05\x2A\x2A\x2A\x2A\xF3\x0F\x11\x04\x24\xE8\x2A\x2A\x2A\x2A\x6A\x20\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x0F\xB7\x86\x2A\x2A\x2A\x2A\x8D\x8E\x2A\x2A\x2A\x2A\x83\xC8\x04"
+				// "windows"	"\xD9\xEE\x56\x6A\x00\x51\xD9\x1C\x24\x68\x2A\x2A\x2A\x2A\x8B\xF1\xE8\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x6A\x00\x51\x8B\xCE\xF3\x0F\x10\x40\x2A\xF3\x0F\x58\x05\x2A\x2A\x2A\x2A\xF3\x0F\x11\x04\x24\xE8\x2A\x2A\x2A\x2A\x6A\x20\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x0F\xB7\x86\x2A\x2A\x2A\x2A\x8D\x8E\x2A\x2A\x2A\x2A\x83\xC8\x04"
 				"linux" "@_ZN11CBaseEntity14RemoveDeferredEv"
 			}
-			"UTIL_Remove" // "Physics queue not empty, error!\n"
+			"UTIL_Remove" // "Physics queue not empty, error!\n" // done
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x85\xF6\x74\x2A\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x84\xC0\x75"
+				// "windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x85\xF6\x74\x2A\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x84\xC0\x75"
 				"linux" "@_Z11UTIL_RemoveP18IServerNetworkable"
 			}
 			"InvalidateBoneCache" // "ValveBiped.Weapon_bone"
@@ -3545,10 +3545,10 @@
 				"windows"	"\x55\x8B\xEC\x56\x6A\xFF\xFF\x75\x08\xE8\x2A\x2A\x2A\x2A\x8B\xF0\x83\xC4\x08\x85\xF6\x75\x2A\x5E"
 				"linux"	 "@_ZN11CBaseEntity13CreateNoSpawnEPKcRK6VectorRK6QAnglePS_"
 			}
-			"CBaseEntityList::RemoveEntity"  // "CBaseEntityList::AddNonNetworkableEntit"
+			"CBaseEntityList::RemoveEntity"  // "CBaseEntityList::AddNonNetworkableEntit" // done
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x8B\x45\x08\x25\xFF\x0F\x00\x00"
+				// "windows"	"\x55\x8B\xEC\x8B\x45\x08\x25\xFF\x0F\x00\x00"
 				"linux" "@_ZN15CBaseEntityList12RemoveEntityE11CBaseHandle"
 			}
 			"SetMinMaxSize" // "s: backwards mins/m"
@@ -3593,13 +3593,13 @@
 				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x0C\x57\x8B\xF9\xB9\x2A\x2A\x2A\x2A\x56\xE8\x2A\x2A\x2A\x2A\xF3\x0F\x10\x46\x2A\x8B\xCF\xF3\x0F\x11\x05\x2A\x2A\x2A\x2A\x8B\x46\x3C\xA3\x2A\x2A\x2A\x2A\x8B\x46\x40\xA3\x2A\x2A\x2A\x2A\x8B\x46\x44\xA3\x2A\x2A\x2A\x2A\x66\x8B\x46\x48\x66\xA3\x2A\x2A\x2A\x2A\x8B\x46\x4C\xA3\x2A\x2A\x2A\x2A\x8B\x46\x50\x8B\x75\x08\x56\xA3\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x57"
 				"linux"	 "@_ZN11CBaseEntity29PhysicsMarkEntitiesAsTouchingEPS_R10CGameTrace"
 			}
-			"CAI_Navigator::UpdateGoalPos" // "Updating goal pos\n"
+			"CAI_Navigator::UpdateGoalPos" // "Updating goal pos\n" // done
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x80\x78\x18\x00"
+				// "windows"	"\x55\x8B\xEC\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x80\x78\x18\x00"
 				"linux"	 "@_ZN13CAI_Navigator13UpdateGoalPosERK6Vector"
 			}
-			"CAI_Navigator::SetGoal" // "Failed to pathfind to nav goal:\n"
+			"CAI_Navigator::SetGoal" // "Failed to pathfind to nav goal:\n" // done
 			{
 				"library"	"server"
 				// TODO: "windows"	"\x55\x8B\xEC\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x80\x78\x18\x00"
@@ -3623,11 +3623,11 @@
 				"windows"	"\x55\x8B\xEC\x83\xEC\x20\x8B\x45\x08\xB9"
 				"linux"	 "@_Z24PropBreakablePrecacheAll8string_t"
 			}
-			"FindEntityInSphere"
+			"FindEntityInSphere" // done
 			{
 				"library"	"server"
 				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x53\x56\x57\x8B\xF9\x8B\x4D\x08"
-				"linux"	 "@_ZN17CGlobalEntityList18FindEntityInSphereEP11CBaseEntityRK6Vectorf"
+				"linux"	 "@_ZN17CGlobalEntityList18FindEntityInSphereEP11CBaseEntityRK6VectorfP17IEntityFindFilter" // "@_ZN17CGlobalEntityList18FindEntityInSphereEP11CBaseEntityRK6Vectorf"
 			}
 			"CreateServerRagdoll" // "CRagdollPropAttached"
 			{
@@ -3677,10 +3677,10 @@
 				"windows"	"\x55\x8B\xEC\x83\xEC\x08\x56\x8B\x75\x08\x8D\x45\xFC"
 				"linux" "@_Z18UTIL_PrecacheOtherPKcS0_"
 			}
-			"UTIL_RemoveImmediate" // NOPE "Couldn't set relationship to unknown en"
+			"UTIL_RemoveImmediate" // NOPE "Couldn't set relationship to unknown en" // done
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x85\xF6\x74\x4D"
+				// "windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x85\xF6\x74\x4D"
 				"linux" "@_Z20UTIL_RemoveImmediateP11CBaseEntity"
 			}
 			"AddListenerEntity"
@@ -3689,10 +3689,10 @@
 				"windows"	"\x55\x8B\xEC\x8B\x91\x30\x00\x01\x00\x33\xC0\x56\x57"
 				"linux" "@_ZN17CGlobalEntityList17AddListenerEntityEP15IEntityListener"
 			}
-			"RemoveListenerEntity"   // "navprop" | UNSTABLE SIG
+			"RemoveListenerEntity"   // "navprop" | UNSTABLE SIG // done
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x8D\x45\x08\x81\xC1\x24\x00\x01\x00"
+				// "windows"	"\x55\x8B\xEC\x8D\x45\x08\x81\xC1\x24\x00\x01\x00"
 				"linux" "@_ZN17CGlobalEntityList20RemoveListenerEntityEP15IEntityListener"
 			}
 			"SetEventIndexForSequence" // "Bad sequence in GetSequenceActivityNa" jmp
@@ -3719,11 +3719,11 @@
 				// TODO: windows
 				"linux" "@_ZN11CBaseEntity15PhysicsRunThinkENS_14thinkmethods_tE"
 			}
-			"ShouldRemoveThisRagdoll"	// "TICK:%5d:Ragdoll separation count: %d\n"
+			"ShouldRemoveThisRagdoll"	// "TICK:%5d:Ragdoll separation count: %d\n" // done ?
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x80\x3D\x2A\x2A\x2A\x2A\x00\x74\x2A\xB0"
-				"linux" "@_Z23ShouldRemoveThisRagdollP14CBaseAnimating"
+				// "windows"	"\x55\x8B\xEC\x83\xEC\x0C\x80\x3D\x2A\x2A\x2A\x2A\x00\x74\x2A\xB0"
+				"linux" "@_Z23ShouldRemoveThisRagdollP14CBaseAnimating.part.0"
 			}
 			"AllocPooledString"	// "%s_weapon"
 			{
@@ -3826,13 +3826,13 @@
 				"windows"	"\x55\x8B\xEC\xB8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x56\x57"
 				"linux" "@_Z27CreateServerRagdollAttachedP14CBaseAnimatingRK6VectoriiP14IPhysicsObjectS0_iS3_iS3_"
 			}
-			"CAI_NetworkBuilder::Build"
+			"CAI_NetworkBuilder::Build" // done ?
 			{
 				"library"	"server"
 				"windows"	"\x55\x8B\xEC\x83\xEC\x30\x8B\x45\x08\x53\x8B\xD9\x57\x8B\x48\x04\x8B\x78\x08"
-				"linux" "@_ZN18CAI_NetworkBuilder5BuildEP11CAI_Network"
+				"linux" "@_ZN18CAI_NetworkBuilder5BuildEP11CAI_Network.cold"
 			}
-			"CAI_NetworkBuilder::InitNodePosition" // "Bad node type!\n"
+			"CAI_NetworkBuilder::InitNodePosition" // "Bad node type!\n" // done
 			{
 				"library"	"server"
 				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x0C\x8B\x46\x3C\x83\xF8\x03\x0F\x84"
@@ -3844,12 +3844,12 @@
 				"windows"	"\x55\x8B\xEC\x8B\x45\x08\x56\x8B\xF1\x85\xC0\x74\x12\x50"
 				"linux" "@_ZN11CBaseEntity15PostConstructorEPKc"
 			}
-			"CAI_Navigator::SetGoal" // "Failed to pathfind to nav goal:"
-			{
-				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x53\x56\x57\x8B\xD9\xE8\x2A\x2A\x2A\x2A\x80\x78\x18\x00"
-				"linux" "@_ZN13CAI_Navigator7SetGoalERK12AI_NavGoal_tj"
-			}
+			// "CAI_Navigator::SetGoal" // "Failed to pathfind to nav goal:"
+			// {
+			// 	"library"	"server"
+			// 	"windows"	"\x55\x8B\xEC\x81\xEC\x2A\x2A\x2A\x2A\x53\x56\x57\x8B\xD9\xE8\x2A\x2A\x2A\x2A\x80\x78\x18\x00"
+			// 	"linux" "@_ZN13CAI_Navigator7SetGoalERK12AI_NavGoal_tj"
+			// }
 			"CBreakableProp::Break"  // "crate"
 			{
 				"library"	"server"
