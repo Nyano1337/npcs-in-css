@@ -1,0 +1,40 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppgdb",
+      "debuggerConfiguration": "gdb",
+      "name": "Remote-NPC",
+      "project": "CMakeLists.txt",
+      "projectTarget": "npcs-in-css.so",
+      "program": "${env.CSS_BIN}",
+      "args": [
+        "-insecure",
+        "-dedicated",
+        "+developer 5",
+        "+map de_dust2",
+        "+exec server.cfg",
+        "+sv_cheats 1"
+      ],
+      "additionalSOLibSearchPath": "${env.SM_BIN}"
+    },
+    {
+      "type": "dll",
+      "name": "Local-NPC",
+      "project": "CMakeLists.txt",
+      "exe": "${env.CSS_BIN}",
+      "debugType": "native",
+      "args": [
+        "-insecure",
+        "-dedicated",
+        "+game_mode 0",
+        "+game_type 0",
+        "+developer 5",
+        "+map de_dust2",
+        "+exec server.cfg",
+        "+sv_cheats 1"
+      ]
+    }
+  ]
+}

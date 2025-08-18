@@ -22,8 +22,6 @@
 #pragma warning( disable : 4284 ) // warning C4284: return type for 'CNetworkVarT<int>::operator ->' is 'int *' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
 #endif
 
-#define MyOffsetOf( type, var ) ( (int)&((type*)0)->var )
-
 #ifdef _DEBUG
 	extern bool g_bUseNetworkVars;
 	#define CHECK_USENETWORKVARS if(g_bUseNetworkVars)
@@ -160,7 +158,7 @@ static inline void DispatchNetworkStateChanged( T *pObj, void *pVar )
 #define CNetworkVarEmbedded( type, name ) \
 	class NetworkVar_##name; \
 	friend class NetworkVar_##name; \
-	static inline int GetOffset_##name() { return MyOffsetOf(ThisClass,name); } \
+	static inline int GetOffset_##name() { return offsetof(ThisClass,name); } \
 	typedef ThisClass ThisClass_##name; \
 	class NetworkVar_##name : public type \
 	{ \
@@ -680,7 +678,7 @@ private:
 	protected: \
 		inline void NetworkStateChanged() \
 		{ \
-		CHECK_USENETWORKVARS ((ThisClass*)(((char*)this) - MyOffsetOf(ThisClass,name)))->NetworkStateChanged(); \
+		CHECK_USENETWORKVARS ((ThisClass*)(((char*)this) - offsetof(ThisClass,name)))->NetworkStateChanged(); \
 		} \
 	private: \
 		char m_Value[length]; \
@@ -733,7 +731,7 @@ private:
 	protected: \
 		inline void NetworkStateChanged( int index ) \
 		{ \
-			CHECK_USENETWORKVARS ((ThisClass*)(((char*)this) - MyOffsetOf(ThisClass,name)))->stateChangedFn( &m_Value[index] ); \
+			CHECK_USENETWORKVARS ((ThisClass*)(((char*)this) - offsetof(ThisClass,name)))->stateChangedFn( &m_Value[index] ); \
 		} \
 		type m_Value[count]; \
 	}; \
@@ -758,7 +756,7 @@ private:
 	public: \
 		static inline void NetworkStateChanged( void *ptr ) \
 		{ \
-			CHECK_USENETWORKVARS ((ThisClass*)(((char*)ptr) - MyOffsetOf(ThisClass,name)))->stateChangedFn( ptr ); \
+			CHECK_USENETWORKVARS ((ThisClass*)(((char*)ptr) - offsetof(ThisClass,name)))->stateChangedFn( ptr ); \
 		} \
 	}; \
 	base< type, NetworkVar_##name > name;

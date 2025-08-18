@@ -17,14 +17,11 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.22)
 project(npcs-in-css)
 
-set(CMAKE_C_COMPILER "clang")
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
-
 ### Finding the SourceMod SDK and game SDK
-get_filename_component(build_root ".." ABSOLUTE)
+get_filename_component(build_root "." ABSOLUTE)
 
 if(IS_DIRECTORY ${build_root}/metamod-source)
     set(MMS "${build_root}/metamod-source")
@@ -50,8 +47,36 @@ endif()
 
 MESSAGE(STATUS "Found HL2SDK directory at ${HL2SDK}")
 
+if(WIN32)
+	
+else()
+	add_definitions(-DCOMPILER_GCC -DGNUC -DHAVE_STDINT_H -DLINUX -D_LINUX -DPOSIX -D_RETAIL)
+
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Dstricmp=strcasecmp -D_stricmp=strcasecmp -D_strnicmp=strncasecmp")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Dstrnicmp=strncasecmp -D_snprintf=snprintf -Dsprintf_s=snprintf")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_vsnprintf=vsnprintf -D_alloca=alloca -Dstrcmpi=strcasecmp -Dstrncpy_s=strncpy")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__forceinline= -D__thiscall= -D__cdecl= -D__fastcall= -Dcdecl=")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DMAX_PATH=PATH_MAX")
+
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pipe -fPIC")
+
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror=return-type -Wno-uninitialized -Wno-switch -Wno-unused -Wno-unused-result")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-implicit-const-int-float-conversion")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-conversion-null -Wno-write-strings -Wno-inconsistent-missing-override -Wno-c++11-narrowing")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-invalid-offsetof -Wno-reorder -Wno-implicit-exception-spec-mismatch -Wno-undefined-bool-conversion")
+
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse -fno-strict-aliasing -m32 -std=c++17")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-threadsafe-statics -fvisibility=hidden -fvisibility-inlines-hidden")
+
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -m32")
+
+	#add_link_options("-Wl,--no-undefined")
+	add_link_options("-static-libstdc++")
+    add_link_options("-static-libgcc")
+endif()
+
 ### Add source files
-add_library(npcs-in-css
+add_library(${PROJECT_NAME}
     SHARED
         extension.cpp
         ${SM}/public/smsdk_ext.cpp
@@ -67,9 +92,9 @@ add_library(npcs-in-css
         CEntity/CEntityBase.cpp
         CEntity/CEntityManager.cpp
         CEntity/CTakeDamageInfo.cpp
-        CEntity/cutil.cpp
+        #CEntity/cutil.cpp
         CEntity/EntityOutput.cpp
-        CEntity/gamemovement.h
+        #CEntity/gamemovement.h
         CEntity/GameSystem.cpp
         CEntity/physics.cpp
         CEntity/physics_impact_damage.cpp
@@ -383,99 +408,26 @@ add_library(npcs-in-css
         Monster/npc_combinedropship.cpp
 ) 
 
-target_compile_definitions(npcs-in-css
-    PRIVATE $<$<COMPILE_LANGUAGE:CXX>:
-            _DEBUG
-            >)
-
-target_compile_options(npcs-in-css
-        PRIVATE $<$<COMPILE_LANGUAGE:C>:
-        -m32
-        $<$<CONFIG:Release>:
-        -s -O3
-        >
-        >
-)
-
-target_compile_options(npcs-in-css
-    PRIVATE $<$<COMPILE_LANGUAGE:CXX>:
-                -m32 -msse -fno-exceptions -fno-threadsafe-statics
-                -Wno-overloaded-virtual -fvisibility-inlines-hidden
-                -Wno-non-virtual-dtor -Wno-delete-non-virtual-dtor
-                $<$<CONFIG:Debug>: 
-                    -Wall -Wextra -g -Og -ggdb
-                >
-                $<$<CONFIG:Release>:
-                    -funroll-loops -s -O3
-                > 
-            >
-)
-
-target_compile_definitions(npcs-in-css
-    PRIVATE $<$<COMPILE_LANGUAGE:CXX>: 
-                GNUC -D_LINUX -DPOSIX -Dstricmp=strcasecmp 
-                -D_stricmp=strcasecmp -D_snprintf=snprintf
-                -D_vsnprintf=vsnprintf -DHAVE_STDINT_H
-                -Dstrnicmp=strncasecmp -D_RETAIL
-                $<$<CONFIG:Debug>: 
-                    -DDEBUG___
-                >
-                $<$<CONFIG:Release>: 
-                    -DNDEBUG 
-                >
-            >
-)
-
-# includes some questionable compiler settings
-target_compile_options(npcs-in-css
-        PRIVATE $<$<COMPILE_LANGUAGE:CXX>:
-            -Wno-unused-parameter
-            -Wno-deprecated-copy
-            -Wno-pedantic
-            -Wno-unused-but-set-variable
-            -Wno-switch
-            -Wno-invalid-offsetof
-            -Wno-conversion-null
-            -Wno-inconsistent-missing-override
-            -Wno-implicit-const-int-float-conversion
-
-            -Wno-expansion-to-defined
-            -Wno-ignored-qualifiers
-            -Wno-extra
-            -Wno-register
-            -Wno-reorder
-            -Wno-c++11-narrowing
-        >
-)
-
-#target_link_libraries(npcs-in-css
-#    PRIVATE $<$<CONFIG:Debug>: -static-libasan -fsanitize=address >
-#            -lm -m32 "-Wl,--exclude-libs,ALL" -shared
-#)
-
-target_link_libraries(npcs-in-css
-     PRIVATE -lm -m32 "-Wl,--exclude-libs,ALL" -shared
-)
-
-# source libs
-if(LINUX)
-    set(HL2LIB ${HL2SDK}/lib/linux)
-    target_link_libraries(npcs-in-css
-            PRIVATE ${HL2LIB}/tier1_i486.a ${HL2LIB}/tier2_i486.a ${HL2LIB}/tier3_i486.a ${HL2LIB}/mathlib_i486.a
-            ${HL2LIB}/libtier0_srv.so ${HL2LIB}/libvstdlib_srv.so
-    )
-else()
-    set(HL2LIB ${HL2SDK}/lib/public)
+if(WIN32)
+	set(HL2LIB ${HL2SDK}/lib/public)
     error(fixme)
+else()
+    set(HL2LIB ${HL2SDK}/lib/linux)
+	file(GLOB SHARED_LIBS 
+			"${HL2LIB}/*.a"
+			"${HL2LIB}/*.so"
+	)
 endif()
 
+link_libraries(${SHARED_LIBS})
+
 #if (CMAKE_CXX_COMPILER_FRONTEND_VARIANT STREQUAL "GNU")
-target_link_libraries(npcs-in-css
-    PRIVATE -static-libgcc -static-libstdc++
-)
+# target_link_libraries(${PROJECT_NAME}
+#     PRIVATE -static-libgcc -static-libstdc++
+# )
 #endif()
 
-target_include_directories(npcs-in-css PUBLIC
+target_include_directories(${PROJECT_NAME} PUBLIC
         CDetour
         CEntity/modify
         CEntity/stuff
@@ -508,4 +460,4 @@ target_include_directories(npcs-in-css PUBLIC
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "monster.ext")
+#set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "monster.ext")

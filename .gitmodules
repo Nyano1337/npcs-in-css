@@ -1,0 +1,10 @@
+[submodule "metamod-source"]
+	path = metamod-source
+	url = https://github.com/alliedmodders/metamod-source.git
+[submodule "sourcemod"]
+	path = sourcemod
+	url = https://github.com/alliedmodders/sourcemod.git
+[submodule "hl2sdk-css"]
+	path = hl2sdk-css
+	url = https://github.com/alliedmodders/hl2sdk.git
+	branch = css

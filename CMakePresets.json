@@ -1,0 +1,105 @@
+{
+	"version": 3,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 22,
+		"patch": 0
+	},
+	"configurePresets": [
+		{
+			"name": "Path-Preset",
+			"hidden": true,
+			"environment": {
+				"GAME_ROOT": "YOUR_PATH",
+				"SM_ROOT": "$env{GAME_ROOT}/cstrike/addons/sourcemod",
+				"SM_BIN": "$env{GAME_ROOT}/cstrike/addons/sourcemod/bin",
+				"EXT_DIR": "$env{SM_ROOT}/extensions"
+			}
+		},
+		{
+			"name": "SM-Linux",
+			"hidden": true,
+			"inherits": "Path-Preset",
+			"generator": "Ninja",
+			"cacheVariables": {
+				"CMAKE_C_COMPILER": "clang-15",
+				"CMAKE_CXX_COMPILER": "clang++-15",
+				"EXT_DIR": "$env{EXT_DIR}",
+				"CMAKE_BUILD_TYPE": "Debug",
+				"BUILD_ON_VS": true
+			},
+			"environment": {
+				"GAME_ROOT": "/home/css",
+				"CSS_BIN": "$env{GAME_ROOT}/srcds_linux"
+			},
+			"vendor": {
+				"microsoft.com/VisualStudioSettings/CMake/1.0": {
+					"intelliSenseMode": "linux-gcc-x86",
+					"hostOS": "Linux"
+				},
+				"microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+					"copySourcesOptions": {
+						"exclusionList": [ ".vs", ".git", "*.ps1", "*.lib", "*.exe", "*.pdb", "*.bat", "*.dll", "out", "x64", "build", "Source2Mod", "artifacts" ]
+					},
+					"sourceDir": "$env{HOME}/.vs"
+				}
+			},
+			"binaryDir": "$env{HOME}/.vs/$ms{projectDirName}/out/build/${presetName}"
+		},
+		{
+			"name": "SM-Windows",
+			"hidden": true,
+			"inherits": "Path-Preset",
+			"generator": "Ninja",
+			"cacheVariables": {
+				"CMAKE_C_COMPILER": "cl",
+				"CMAKE_CXX_COMPILER": "cl",
+				"EXT_DIR": "$env{EXT_DIR}",
+				"CMAKE_BUILD_TYPE": "Debug",
+				"BUILD_ON_VS": true
+			},
+			"environment": {
+				"GAME_ROOT": "E:/Steam/steamapps/common/Counter-Strike Global Offensive/game",
+				"CSS_BIN": "$env{GAME_ROOT}/bin/win64/cs2.exe"
+			},
+			"vendor": {
+				"microsoft.com/VisualStudioSettings/CMake/1.0": {
+					"intelliSenseMode": "windows-msvc-x64",
+					"hostOS": "Windows"
+				}
+			}
+		},
+		{
+			"name": "Linux-Debug",
+			"hidden": false,
+			"inherits": "SM-Linux",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+		},
+		{
+			"name": "Linux-Release",
+			"hidden": false,
+			"inherits": "SM-Linux",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release"
+			}
+		},
+		{
+			"name": "Win-Release",
+			"hidden": false,
+			"inherits": "SM-Windows",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release"
+			}
+		},
+		{
+			"name": "Win-Debug",
+			"hidden": false,
+			"inherits": "SM-Windows",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithOd"
+			}
+		}
+	]
+}

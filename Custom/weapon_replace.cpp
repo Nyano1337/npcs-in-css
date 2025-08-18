@@ -2,7 +2,7 @@
 #include "CCombatWeapon.h"
 #include "weapon_rpg_replace.h"
 #include "weapon_physcannon_replace.h"
-#include "sm_stringhashmap.h"
+#include "sm_hashmap.h"
 
 class WeaponReplaceSystem : public CBaseGameSystem
 {
