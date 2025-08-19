@@ -100,6 +100,7 @@ public:
 	//static void PhysDisableEntityCollisions( IPhysicsObject *pObject0, IPhysicsObject *pObject1 );
 	//static void PhysEnableEntityCollisions( CBaseEntity *pObject0, CBaseEntity *pObject1 );
 	static void DetachAttachedRagdollsForEntity( CBaseEntity *pent );
+	bool GetAttachment( CBaseEntity* pEnt, const char *szName, Vector* absOrigin, Vector *forward = NULL, Vector *right = NULL, Vector *up = NULL );
 
 public: //CAI_HintManager
 	CEntity *CAI_HintManager_FindHint(CBaseEntity *pNPC, const Vector &position, const CHintCriteria &hintCriteria );

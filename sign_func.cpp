@@ -1810,6 +1810,23 @@ void HelperFunction::DetachAttachedRagdollsForEntity( CBaseEntity *pent )
 	(thisfunc)(pent);
 }
 
+bool HelperFunction::GetAttachment(CBaseEntity* pEnt, const char* szName, Vector* absOrigin, Vector* forward, Vector* right, Vector* up)
+{
+	static void *func = NULL;
+	if(!func)
+	{
+		if(!g_pGameConf->GetMemSig("GetAttachment_6args", &func))
+		{
+			assert(0);
+			return false;
+		}
+	}
+
+	typedef bool (THISCALLCONV *_func)(CBaseEntity*, const char*, Vector*, Vector*, Vector*, Vector*);
+	_func thisfunc = (_func)(func);
+	return (thisfunc)(pEnt, szName, absOrigin, forward, right, up);
+}
+
 void HelperFunction::CSoundEnt_InsertSound( int iType, const Vector &vecOrigin, int iVolume, float flDuration, CBaseEntity *pOwner, int soundChannelIndex, CBaseEntity *pSoundTarget )
 {
 	static void *func = NULL;

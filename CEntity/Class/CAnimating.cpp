@@ -479,8 +479,11 @@ int CAnimating::LookupAttachment( const char *szName )
 // Output :	location and angles
 //-----------------------------------------------------------------------------
 bool CAnimating::GetAttachment( const char *szName, Vector &absOrigin, Vector *forward, Vector *right, Vector *up )
-{																
-	return GetAttachment( LookupAttachment( szName ), absOrigin, forward, right, up );
+{
+	CBaseEntity *pBaseEntity = BaseEntity();
+	assert(pBaseEntity);
+
+	return g_helpfunc.GetAttachment(pBaseEntity, szName, &absOrigin, forward, right, up);
 }
 
 bool CAnimating::GetAttachment( int iAttachment, Vector &absOrigin, Vector *forward, Vector *right, Vector *up )
