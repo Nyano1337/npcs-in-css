@@ -9,15 +9,17 @@
       "project": "CMakeLists.txt",
       "projectTarget": "npcs-in-css.so",
       "program": "${env.CSS_BIN}",
+      "cwd": "${env.GAME_ROOT}",
       "args": [
-        "-insecure",
-        "-dedicated",
+        "-game",
+        "cstrike",
+        "-console",
         "+developer 5",
         "+map de_dust2",
         "+exec server.cfg",
         "+sv_cheats 1"
       ],
-      "additionalSOLibSearchPath": "${env.SM_BIN}"
+      "preDebugCommand": "export LD_LIBRARY_PATH=${env.GAME_ROOT}/bin:$LD_LIBRARY_PATH"
     },
     {
       "type": "dll",

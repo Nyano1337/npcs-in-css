@@ -75,6 +75,8 @@ else()
     add_link_options("-static-libgcc")
 endif()
 
+add_definitions(-DSOURCE_ENGINE=5)
+
 ### Add source files
 add_library(${PROJECT_NAME}
     SHARED
@@ -421,12 +423,6 @@ endif()
 
 link_libraries(${SHARED_LIBS})
 
-#if (CMAKE_CXX_COMPILER_FRONTEND_VARIANT STREQUAL "GNU")
-# target_link_libraries(${PROJECT_NAME}
-#     PRIVATE -static-libgcc -static-libstdc++
-# )
-#endif()
-
 target_include_directories(${PROJECT_NAME} PUBLIC
     CDetour
     CEntity/modify
@@ -460,4 +456,12 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
-#set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "monster.ext")
+
+if (NOT "${EXT_DIR}" STREQUAL "")
+	add_custom_command(
+		TARGET ${PROJECT_NAME} POST_BUILD
+		COMMAND ${CMAKE_COMMAND} -E copy
+			$<TARGET_FILE:${PROJECT_NAME}>
+			"${EXT_DIR}/monster.ext.so"
+	)
+endif()
