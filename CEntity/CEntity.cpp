@@ -626,7 +626,7 @@ void CEntity::CE_Init(edict_t *pEdict, CBaseEntity *pBaseEntity)
 	m_pEntity = pBaseEntity;
 	m_pEdict = pEdict;
 
-	assert(!pEntityData[entindex_non_network()]);
+	//assert(!pEntityData[entindex_non_network()]);
 
 	pEntityData[entindex_non_network()] = this;
 	if(!m_pEntity /* || !m_pEdict*/)

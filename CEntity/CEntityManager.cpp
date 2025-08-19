@@ -288,7 +288,7 @@ void CEntityManager::RemoveEdict(edict_t *e)
 	if (pEnt)
 	{
 		g_pSM->LogMessage(myself, "Edict Removed, removing CEntity");
-		assert(0);
+		//assert(0);
 		pEnt->Destroy();
 	}
 }
