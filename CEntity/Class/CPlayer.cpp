@@ -277,14 +277,6 @@ int CPlayer::OnTakeDamage(const CTakeDamageInfo& info)
 		}
 	}
 
-	if(info.GetDamageType() & DMG_FALL)
-	{
-		if(info.GetDamage() > 10)
-		{
-			newinfo.SetDamage(10.0f);
-		}
-	}
-
 	int result = BaseClass::OnTakeDamage(newinfo);
 	if (result)
 	{
