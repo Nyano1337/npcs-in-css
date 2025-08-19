@@ -1,0 +1,146 @@
+//*********************************************************
+// HL2 Item sounds
+
+"ItemBattery.Touch"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/battery_pickup.wav"
+}
+
+"HealthKit.Touch"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/smallmedkit1.wav"
+}
+
+"HealthVial.Touch"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/smallmedkit1.wav"
+}
+
+"WallHealth.Deny"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/medshotno1.wav"
+}
+
+"WallHealth.Start"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/medshot4.wav"
+}
+
+"WallHealth.LoopingContinueCharge"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/medcharge4.wav"
+}
+
+"WallHealth.Recharge"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/medshot4.wav"
+}
+
+"SuitRecharge.Deny"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/suitchargeno1.wav"
+}
+
+"SuitRecharge.Start"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/suitchargeok1.wav"
+}
+
+"SuitRecharge.ChargingLoop"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/suitcharge1.wav"
+}
+
+"AmmoCrate.Open"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.45"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/ammocrate_open.wav"
+}
+
+"AmmoCrate.Close"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.45"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"items/ammocrate_close.wav"
+}
+
+// **********************************
+// OBSOLETE: player viewpoint missile
+
+"Missile.Accelerate"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"weapons/rpg/rocket1.wav"
+}
+
+"Missile.Ignite"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"weapons/rpg/rocket1.wav"
+}
+
+"Missile.ShotDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"weapons/rpg/shotdown.wav"	
+}
