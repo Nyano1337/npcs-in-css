@@ -801,7 +801,7 @@ void CNPC_CeilingTurret::Shoot( const Vector &vecSrc, const Vector &vecDirToEnem
 	FireBulletsInfo_t info;
 	info.m_iTracerFreq = 1;
 	info.m_iShots = 1;
-	info.m_iDamage = sk_npc_turret_ceiling_bullet_damage.GetInt();
+	info.m_flDamage = sk_npc_turret_ceiling_bullet_damage.GetInt();
 
 	if ( GetEnemy() != NULL )
 	{

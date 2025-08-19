@@ -728,6 +728,9 @@ void CPropJeep::Think( void )
 {
 	BaseClass::Think();
 
+	// Create dangers sounds in front of the vehicle.
+	CreateDangerSounds();
+
 	CPlayer	*pPlayer = ToBasePlayer(CEntity::Instance(GetDriver()));
 
 	if ( m_bEngineLocked )
@@ -1453,8 +1456,9 @@ void CPropJeep::ProcessMovement( CBaseEntity *pPlayer, CMoveData *pMoveData )
 {
 	BaseClass::ProcessMovement( pPlayer, pMoveData );
 
+	// FIXME: ProcessMovement not triggered
 	// Create dangers sounds in front of the vehicle.
-	CreateDangerSounds();
+	// CreateDangerSounds();
 }
 
 //-----------------------------------------------------------------------------

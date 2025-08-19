@@ -1081,7 +1081,7 @@ void CNPC_FloorTurret::Shoot( const Vector &vecSrc, const Vector &vecDirToEnemy,
 		info.m_iAmmoType = m_iAmmoType;
 	}
 
-	info.m_iDamage = sk_npc_turret_floor_bullet_damage.GetFloat();
+	info.m_flDamage = sk_npc_turret_floor_bullet_damage.GetFloat();
 
 	FireBullets( info );
 	EmitSound( "NPC_FloorTurret.ShotSounds", m_ShotSounds );

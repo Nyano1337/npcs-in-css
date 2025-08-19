@@ -799,8 +799,11 @@ int CAnimating::GetBodygroup( int iGroup )
 // Output :	location and angles
 //-----------------------------------------------------------------------------
 bool CAnimating::GetAttachment( const char *szName, Vector &absOrigin, QAngle &absAngles )
-{																
-	return GetAttachment( LookupAttachment( szName ), absOrigin, absAngles );
+{
+	CBaseEntity *pBaseEntity = BaseEntity();
+	assert(pBaseEntity);
+
+	return g_helpfunc.GetAttachment(pBaseEntity, szName, &absOrigin, &absAngles);
 }
 
 //-----------------------------------------------------------------------------

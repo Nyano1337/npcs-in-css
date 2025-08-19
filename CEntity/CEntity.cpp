@@ -2807,7 +2807,7 @@ const char *CEntity::GetContextName( int index ) const
 void CEntity::FireBullets( int cShots, const Vector &vecSrc, 
 	const Vector &vecDirShooting, const Vector &vecSpread, float flDistance, 
 	int iAmmoType, int iTracerFreq, int firingEntID, int attachmentID,
-	float iDamage, CBaseEntity *pAttacker, bool bFirstShotAccurate )
+	float flDamage, CBaseEntity *pAttacker, bool bFirstShotAccurate )
 {
 	FireBulletsInfo_t info;
 	info.m_iShots = cShots;
@@ -2817,7 +2817,7 @@ void CEntity::FireBullets( int cShots, const Vector &vecSrc,
 	info.m_flDistance = flDistance;
 	info.m_iAmmoType = iAmmoType;
 	info.m_iTracerFreq = iTracerFreq;
-	info.m_iDamage = iDamage;
+	info.m_flDamage = flDamage;
 	info.m_pAttacker = pAttacker;
 	info.m_nFlags = bFirstShotAccurate ? FIRE_BULLETS_FIRST_SHOT_ACCURATE : 0;
 

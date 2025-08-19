@@ -2414,7 +2414,7 @@ void CFuncTankGun::Fire( int bulletCount, const Vector &barrelEnd, const Vector 
 	CEntity *parent = GetParent();
 	info.m_flDistance = MAX_TRACE_LENGTH;
 	info.m_iTracerFreq = 1;
-	info.m_iDamage = m_iBulletDamage;
+	info.m_flDamage = m_iBulletDamage * 1.0f;
 	info.m_iPlayerDamage = m_iBulletDamageVsPlayer;
 	info.m_pAttacker = (pAttacker)?pAttacker->BaseEntity():NULL;
 	info.m_pAdditionalIgnoreEnt = (parent)?parent->BaseEntity():NULL;

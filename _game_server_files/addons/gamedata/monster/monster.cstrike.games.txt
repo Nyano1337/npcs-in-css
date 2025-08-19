@@ -4236,6 +4236,10 @@
 			{
 				"linux" "@_ZN14CBaseAnimating13GetAttachmentEPKcR6VectorPS2_S4_S4_"
 			}
+			"GetAttachment_4args"
+			{
+				"linux" "@_ZN14CBaseAnimating13GetAttachmentEPKcR6VectorR6QAngle"
+			}
 		}
 	}
 }

@@ -579,11 +579,12 @@ struct FireBulletsInfo_t
 		m_vecSpread.Init( 0, 0, 0 );
 		m_flDistance = 8192;
 		m_iTracerFreq = 4;
-		m_iDamage = 0;
+		m_flDamage = 0;
 		m_iPlayerDamage = 0;
 		m_pAttacker = NULL;
 		m_nFlags = 0;
 		m_pAdditionalIgnoreEnt = NULL;
+		m_flDamageForceScale = 1.0f;
 
 #ifdef _DEBUG
 		m_iAmmoType = -1;
@@ -591,7 +592,7 @@ struct FireBulletsInfo_t
 		m_vecDirShooting.Init( VEC_T_NAN, VEC_T_NAN, VEC_T_NAN );
 #endif
 		m_bPrimaryAttack = true;
-		m_flDamageForceScale = 1.0f;
+		m_bUseServerRandomSeed = false;
 	}
 
 	FireBulletsInfo_t( int nShots, const Vector &vecSrc, const Vector &vecDir, const Vector &vecSpread, float flDistance, int nAmmoType, bool bPrimaryAttack = true )
@@ -603,13 +604,14 @@ struct FireBulletsInfo_t
 		m_flDistance = flDistance;
 		m_iAmmoType = nAmmoType;
 		m_iTracerFreq = 4;
-		m_iDamage = 0;
+		m_flDamage = 0;
 		m_iPlayerDamage = 0;
 		m_pAttacker = NULL;
 		m_nFlags = 0;
 		m_pAdditionalIgnoreEnt = NULL;
 		m_flDamageForceScale = 1.0f;
 		m_bPrimaryAttack = bPrimaryAttack;
+		m_bUseServerRandomSeed = false;
 	}
 
 	int m_iShots;
@@ -619,13 +621,14 @@ struct FireBulletsInfo_t
 	float m_flDistance;
 	int m_iAmmoType;
 	int m_iTracerFreq;
-	float m_iDamage;
-	int m_iPlayerDamage;	// Damage to be used instead of m_iDamage if we hit a player
+	float m_flDamage;
+	int m_iPlayerDamage;	// Damage to be used instead of m_flDamage if we hit a player
 	int m_nFlags;			// See FireBulletsFlags_t
 	float m_flDamageForceScale;
 	CBaseEntity *m_pAttacker;
 	CBaseEntity *m_pAdditionalIgnoreEnt;
 	bool m_bPrimaryAttack;
+	bool m_bUseServerRandomSeed;
 };
 
 //-----------------------------------------------------------------------------

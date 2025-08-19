@@ -1810,7 +1810,7 @@ void HelperFunction::DetachAttachedRagdollsForEntity( CBaseEntity *pent )
 	(thisfunc)(pent);
 }
 
-bool HelperFunction::GetAttachment(CBaseEntity* pEnt, const char* szName, Vector* absOrigin, Vector* forward, Vector* right, Vector* up)
+bool HelperFunction::GetAttachment(CBaseEntity* pEnt, const char* szName, const Vector* absOrigin, const Vector* forward, const Vector* right, const Vector* up)
 {
 	static void *func = NULL;
 	if(!func)
@@ -1822,9 +1822,26 @@ bool HelperFunction::GetAttachment(CBaseEntity* pEnt, const char* szName, Vector
 		}
 	}
 
-	typedef bool (THISCALLCONV *_func)(CBaseEntity*, const char*, Vector*, Vector*, Vector*, Vector*);
+	typedef bool (THISCALLCONV *_func)(CBaseEntity*, const char*, const Vector*, const Vector*, const Vector*, const Vector*);
 	_func thisfunc = (_func)(func);
 	return (thisfunc)(pEnt, szName, absOrigin, forward, right, up);
+}
+
+bool HelperFunction::GetAttachment(CBaseEntity* pEnt, const char* szName, const Vector* absOrigin, const QAngle* absAngle)
+{
+	static void *func = NULL;
+	if(!func)
+	{
+		if(!g_pGameConf->GetMemSig("GetAttachment_4args", &func))
+		{
+			assert(0);
+			return false;
+		}
+	}
+
+	typedef bool (THISCALLCONV *_func)(CBaseEntity*, const char*, const Vector*, const QAngle*);
+	_func thisfunc = (_func)(func);
+	return (thisfunc)(pEnt, szName, absOrigin, absAngle);
 }
 
 void HelperFunction::CSoundEnt_InsertSound( int iType, const Vector &vecOrigin, int iVolume, float flDuration, CBaseEntity *pOwner, int soundChannelIndex, CBaseEntity *pSoundTarget )
