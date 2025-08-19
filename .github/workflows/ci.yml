@@ -1,0 +1,44 @@
+name: Continuous Integration
+on: 
+  push:
+    branches:
+      - master
+      - ci
+  pull_request:
+    branches:
+      - master
+      - ci
+
+jobs:
+  build-linux:
+    name: Linux
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          lfs: false
+
+      - name: Install Linux dependencies
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            gcc-multilib g++-multilib libstdc++6 lib32stdc++6 \
+            libc6-dev libc6-dev-i386 linux-libc-dev \
+            linux-libc-dev:i386 lib32z1-dev clang-14
+
+      - name: Setup Ninja
+        uses: seanmiddleditch/gha-setup-ninja@master
+
+      - name: Build with CMake
+        run: |
+          cmake -G Ninja -B build -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="clang" -DCMAKE_CXX_COMPILER="clang++" -DEXT_DIR="$(pwd)/_game_server_files/addons/extensions"
+          cmake --build build
+
+      - name: Archive build
+        uses: actions/upload-artifact@v4
+        with:
+          name: monster-linux
+          path: ./_game_server_files
