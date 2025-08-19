@@ -48,7 +48,19 @@ endif()
 MESSAGE(STATUS "Found HL2SDK directory at ${HL2SDK}")
 
 if(WIN32)
+    set(HL2LIB ${HL2SDK}/lib/public)
+    error(fixme)
+else()
+    set(HL2LIB ${HL2SDK}/lib/linux)
+    file(GLOB SHARED_LIBS
+        "${HL2LIB}/*.a"
+        "${HL2LIB}/*.so"
+    )
+endif()
 
+link_libraries(${SHARED_LIBS})
+
+if(WIN32)
 else()
     add_definitions(-DCOMPILER_GCC -DGNUC -DHAVE_STDINT_H -DLINUX -D_LINUX -DPOSIX -D_RETAIL)
 
@@ -409,19 +421,6 @@ add_library(${PROJECT_NAME}
     Monster/npc_puppet.cpp
     Monster/npc_combinedropship.cpp
 )
-
-if(WIN32)
-    set(HL2LIB ${HL2SDK}/lib/public)
-    error(fixme)
-else()
-    set(HL2LIB ${HL2SDK}/lib/linux)
-    file(GLOB SHARED_LIBS
-        "${HL2LIB}/*.a"
-        "${HL2LIB}/*.so"
-    )
-endif()
-
-link_libraries(${SHARED_LIBS})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
     CDetour

@@ -19,6 +19,7 @@
         "+exec server.cfg",
         "+sv_cheats 1"
       ],
+      "additionalSOLibSearchPath": "${env.SM_BIN}",
       "preDebugCommand": "export LD_LIBRARY_PATH=${env.GAME_ROOT}/bin:$LD_LIBRARY_PATH"
     },
     {
