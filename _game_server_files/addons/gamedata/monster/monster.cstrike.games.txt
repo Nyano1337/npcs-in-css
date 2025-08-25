@@ -233,8 +233,8 @@
 			}
 			"SetParent" // done
 			{
-				"windows"	"35" // "34"
-				"linux"	"36" // "35"
+				"windows"	"36"
+				"linux"	"37"
 			}
 			"ObjectCaps" // done
 			{
