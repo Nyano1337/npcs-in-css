@@ -1070,10 +1070,14 @@ void CBaseHeadcrab::EliminateRollAndPitch()
 //-----------------------------------------------------------------------------
 void CBaseHeadcrab::BeginClimbFromCanister()
 {
-	Assert( GetMoveParent() );
+	auto pMoveParent = GetMoveParent();
+	Assert( pMoveParent );
+	if (!pMoveParent) {
+		return;
+	}
 	// Compute a desired position or hint
 	Vector vecForward, vecActualForward;
-	AngleVectors( GetMoveParent()->GetAbsAngles(), &vecActualForward );
+	AngleVectors( pMoveParent->GetAbsAngles(), &vecActualForward );
 	vecForward = vecActualForward;
 	vecForward.z = 0.0f;
 	VectorNormalize( vecForward );
@@ -1142,10 +1146,14 @@ void CBaseHeadcrab::BeginClimbFromCanister()
 
 void CBaseHeadcrab::JumpFromCanister()
 {
-	Assert( GetMoveParent() );
+	auto pMoveParent = GetMoveParent();
+	Assert( pMoveParent );
+	if (!pMoveParent) {
+		return;
+	}
 
 	Vector vecForward, vecActualForward, vecActualRight;
-	AngleVectors( GetMoveParent()->GetAbsAngles(), &vecActualForward, &vecActualRight, NULL );
+	AngleVectors( pMoveParent->GetAbsAngles(), &vecActualForward, &vecActualRight, NULL );
 
 	switch( m_nJumpFromCanisterDir )
 	{

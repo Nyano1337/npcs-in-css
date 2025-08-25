@@ -160,7 +160,61 @@ void CC_NPC_Create( const CCommand &args )
 	}
 }
 
+void CC_NPC2_Create( const CCommand &args )
+{
+	int index = g_Monster.GetCommandClient();
+	CPlayer* pPlayer = UTIL_PlayerByIndex(index);
+	if(pPlayer == NULL)
+		return;
 
+	gamehelpers->TextMsg(index, TEXTMSG_DEST_CHAT, "[MONSTER] Creating env_headcrabcanister...");
+
+	// Try to create entity
+	CEntity *baseNPC = CreateEntityByName("env_headcrabcanister");
+	
+	baseNPC->CustomDispatchKeyValue("angles", "-90 0 0");
+	baseNPC->CustomDispatchKeyValue("Damage", "50");
+	baseNPC->CustomDispatchKeyValue("DamageRadius", "750");
+	baseNPC->CustomDispatchKeyValue("FlightSpeed", "1000");
+	baseNPC->CustomDispatchKeyValue("FlightTime", "1");
+	baseNPC->CustomDispatchKeyValue("HeadcrabCount", "6");
+	baseNPC->CustomDispatchKeyValue("HeadcrabType", "0");
+	baseNPC->CustomDispatchKeyValue("MaxSkyboxRefireTime", "0");
+	baseNPC->CustomDispatchKeyValue("MinSkyboxRefireTime", "0");
+	baseNPC->CustomDispatchKeyValue("SkyboxCannisterCount", "1");
+	baseNPC->CustomDispatchKeyValue("SmokeLifetime", "30");
+	baseNPC->CustomDispatchKeyValue("spawnflags", "8192");
+	baseNPC->CustomDispatchKeyValue("StartingHeight", "0");
+	if (baseNPC)
+	{
+		baseNPC->Precache();
+
+		// Now attempt to drop into the world		
+		trace_t tr;
+		Vector forward;
+		pPlayer->EyeVectors( &forward );
+		UTIL_TraceLine(pPlayer->EyePosition(),
+			pPlayer->EyePosition() + forward * MAX_TRACE_LENGTH,MASK_NPCSOLID, 
+			pPlayer->BaseEntity(), COLLISION_GROUP_NONE, &tr );
+		if ( tr.fraction != 1.0)
+		{
+			// Raise the end position a little up off the floor, place the npc and drop him down
+			tr.endpos.z += 12;
+			baseNPC->Teleport( &tr.endpos, NULL, NULL );
+			UTIL_DropToFloor( baseNPC, MASK_NPCSOLID );
+
+			// Now check that this is a valid location for the new npc to be
+			Vector	vUpBit = baseNPC->GetAbsOrigin();
+			vUpBit.z += 1;
+		}
+		DispatchSpawn(baseNPC->BaseEntity());
+
+		baseNPC->Activate();
+
+		variant_t emptyVariant;
+		baseNPC->CustomAcceptInput("FireCanister", baseNPC->BaseEntity(), baseNPC->BaseEntity(), emptyVariant, 0);
+	}
+}
 
 void cmd1_CommandCallback(const CCommand &command)
 {
@@ -340,6 +394,7 @@ bool CommandInitialize()
 	new ConCommand("npc1",cmd1_CommandCallback, "", 0);
 	new ConCommand("monster_dump",monster_dump_CommandCallback, "", 0);
 	new ConCommand("npc_create", CC_NPC_Create, "Creates an NPC of the given type where the player is looking (if the given NPC can actually stand at that location).  Note that this only works for npc classes that are already in the world.  You can not create an entity that doesn't have an instance in the level.\n\tArguments:	{npc_class_name}", FCVAR_CHEAT|FCVAR_GAMEDLL);
+	new ConCommand("env_headcrabcanister_create", CC_NPC2_Create, "Creates an NPC of the given type where the player is looking (if the given NPC can actually stand at that location).  Note that this only works for npc classes that are already in the world.  You can not create an entity that doesn't have an instance in the level.\n\tArguments:	{npc_class_name}", FCVAR_CHEAT|FCVAR_GAMEDLL);
 
 	new ConCommand("monster_spawnjeep", monster_spawn_jeep, "", 0);
 
